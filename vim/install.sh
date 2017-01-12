@@ -14,11 +14,6 @@ if [[ ! -e ~/.vim/bundle/vim-sensible ]]; then
 	git clone git://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
 fi
 
-if [[ ! -e ~/.vim/bundle/vim-colors-solarized ]]; then
-	echo "Installing vim-colors-solarized..."
-	git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
-fi
-
 if [[ ! -e ~/.vim/bundle/vim-airline ]]; then
 	echo "Installing vim-airline..."
 	git clone git://github.com/vim-airline/vim-airline.git ~/.vim/bundle/vim-airline
@@ -28,3 +23,16 @@ if [[ ! -e ~/.vim/bundle/vim-airline-themes ]]; then
 	echo "Installing vim-airline-themes..."
 	git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
 fi
+
+if [[ ! -e ~/.vim/bundle/nerdtree ]]; then
+    echo "Installing NERDTree..."
+    git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+fi
+
+if [[ ! -e ~/.vim/bundle/tomorrow-theme ]]; then
+    echo "Installing tomorrow theme..."
+    git clone https://github.com/chriskempson/tomorrow-theme.git ~/.vim/bundle/tomorrow-theme-temp
+    mv ~/.vim/bundle/tomorrow-theme-temp/vim ~/.vim/bundle/tomorrow-theme
+    rm -Rf ~/.vim/bundle/tomorrow-theme
+fi
+
