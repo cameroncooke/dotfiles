@@ -114,6 +114,8 @@ done
 
 unset config_files
 
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
 # Path
 PATH=/usr/local/Cellar/ruby/2.3.1/bin:$PATH
 export PATH="$HOME/.rvm/bin:$HOME/.dotfiles/bin:$PATH" # Add RVM to PATH for scripting

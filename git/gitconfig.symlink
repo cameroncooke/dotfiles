@@ -21,6 +21,10 @@
         whitespace = nowarn
 [mergetool]
         keepBackup = false
+#driver for merging Xcode project files
+[merge "mergepbx"]
+        name = Xcode project files merger
+        driver = mergepbx %O %A %B
 [difftool]
         prompt = false
 [help]
@@ -35,3 +39,14 @@
 	required = true
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
+
+#driver for merging Xcode project files
+[mergetool "mergepbx"]
+    cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+
+[merge "mergepbx"]
+        name = XCode project files merger
+        driver = mergepbx %O %A %B
+        
+[credential]
+	helper = osxkeychain
