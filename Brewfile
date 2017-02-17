@@ -27,6 +27,8 @@ brew 'wget'
 brew 'xctool'
 brew 'youtube-dl'
 brew 'zsh-syntax-highlighting'
+brew 'fasd'
+brew 'mergepbx'
 
 #cask 'appcleaner'
 #cask 'alfred'
