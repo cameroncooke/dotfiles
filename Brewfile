@@ -29,6 +29,8 @@ brew 'xctool'
 brew 'youtube-dl'
 brew 'zsh-syntax-highlighting'
 brew 'git-flow'
+brew 'fasd'
+brew 'mergepbx'
 
 cask 'alfred'
 cask 'atom'

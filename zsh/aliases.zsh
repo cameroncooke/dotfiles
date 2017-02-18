@@ -14,6 +14,7 @@ alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e open' # quick opening files with xdg-open
 
 alias sb='sublime'
+alias z="fasd_cd -d"
 
 alias giftfinder_auth_token="a283afb861412cd8dac0302bdf0aa8c8"
 alias curl_giftfinder="curl -v -H \"X-Notonthehighstreet-Token:a283afb861412cd8dac0302bdf0aa8c8\""

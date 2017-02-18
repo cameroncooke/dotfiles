@@ -15,7 +15,7 @@
       "tmp"
       "vendor"
     ]
-    telemetryConsent: "limited"
+    telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
       "solarized-dark-syntax"
