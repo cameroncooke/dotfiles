@@ -37,6 +37,11 @@ There's a few special files in the hierarchy.
 ```sh
 git clone git@github.com:cameroncooke/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+script/install
+```
+
+Once installation complete:
+```
 script/bootstrap
 ```
 

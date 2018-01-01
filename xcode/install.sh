@@ -8,7 +8,7 @@
 #
 
 # Install Alcatraz
-curl -fsSL https://raw.github.com/alcatraz/Alcatraz/master/Scripts/install.sh | sh
+# curl -fsSL https://raw.github.com/alcatraz/Alcatraz/master/Scripts/install.sh | sh
 
 XCODE_THEMES_DIR=$HOME/Library/Developer/Xcode/UserData/FontAndColorThemes
 GIT_THEMES_DIR=${TMPDIR}xcode-themes-${RANDOM}
