@@ -1,6 +1,6 @@
-# iotize does dotfiles
+# camsoft's dotfiles
 
-Your dotfiles are how you personalize your system. These are mine.
+Your dotfiles are how you personalise your system.
 
 If you're interested in the philosophy behind why projects like these are
 awesome, you might want to [read Zach Holman's post on the
