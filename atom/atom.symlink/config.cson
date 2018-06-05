@@ -1,9 +1,23 @@
 "*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#80deea"
+      accentColor: "#528c94"
+      genAccent: true
+      paintCursor: true
+      predefinedColor: "Cyan"
+    fonts:
+      fontSize: 17
+    tabs: {}
+    ui:
+      panelContrast: true
+      panelShadows: true
   core:
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
+      "linter-swiftc"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -15,21 +29,26 @@
       "tmp"
       "vendor"
     ]
+    projectHome: "/Users/cameron/Source"
     telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
-      "solarized-dark-syntax"
+      "seti-ui"
+      "seti-syntax"
     ]
   editor:
     fontFamily: "Menlo"
-    fontSize: 13
+    fontSize: 17
     invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
   "go-plus":
     goPath: "/Users/holman/Code/go"
+  "one-dark-ui": {}
   "release-notes":
     viewedVersion: "0.89.0"
+  "seti-ui": {}
   "spell-check":
     grammars: [
       "text.plain"
