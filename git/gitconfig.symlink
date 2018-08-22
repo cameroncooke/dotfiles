@@ -45,3 +45,6 @@
         
 [credential]
 	helper = osxkeychain
+[user]
+	name = Cameron Cooke
+	email = web@cameroncooke.com
