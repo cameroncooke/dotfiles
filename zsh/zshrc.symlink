@@ -68,7 +68,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew xcode fasd, zsh-iterm-touchbar)
+plugins=(git brew xcode fasd zsh-iterm-touchbar dircycle jsontools)
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -132,7 +132,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source $HOME/.git-flow-completion.zsh
 
 export PATH="/usr/local/Cellar:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
-
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 eval "$(rbenv init -)"
