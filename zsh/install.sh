@@ -16,6 +16,10 @@ then
 	mv ~/.zshrc ~/.zshrc-default
 fi
 
+# install powerlevel9k oh-my-zsh theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+
 # This is leftover from installing custom Zsh themes.
 # Might be useful for future reference:
 #
