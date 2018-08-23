@@ -31,20 +31,3 @@ brew 'zsh-syntax-highlighting'
 brew 'git-flow'
 brew 'fasd'
 brew 'mergepbx'
-
-cask 'alfred'
-cask 'atom'
-cask 'disk-inventory-x'
-cask 'google-chrome'
-cask 'sketch'
-cask 'sublime'
-
-brew 'Caskroom/cask/iterm2'
-
-# Get these from the MAS
-# - 1password
-# - dash
-# - slack
-# - tweetbot
-# - xcode
-
