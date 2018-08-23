@@ -281,12 +281,13 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 # Disable the annoying line marks
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
-# Install powerline/fonts - Meslo
-git clone https://github.com/powerline/fonts.git ~/Downloads/powerline-fonts
-cd ~/Downloads/powerline-fonts/Meslo\ Dotted
-find . -name '*.ttf' -exec open {} \;
+# Install powerline/fonts
+git clone https://github.com/powerline/fonts.git --depth=1 ~/Downloads/powerline-fonts
+
+cd ~/Downloads/powerline-fonts/
+./install.sh
 cd -
-echo "Powerline Meslo fonts installed."
+echo "Powerline fonts installed."
 
 ###############################################################################
 # iTerm 2                                                                     #
