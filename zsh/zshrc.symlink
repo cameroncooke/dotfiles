@@ -125,6 +125,9 @@ do
   source $file
 done
 
+# danger
+export DANGER_GITHUB_API_TOKEN="4365ef5dd735a3e4bcbf8fa0d4cce09c89c59bd1"
+
 unset config_files
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -133,6 +136,9 @@ source $HOME/.git-flow-completion.zsh
 
 export PATH="/usr/local/Cellar:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 eval "$(rbenv init -)"
+eval "$(pyenv init -)"
+
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
