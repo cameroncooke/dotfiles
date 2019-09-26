@@ -68,7 +68,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew xcode fasd zsh-iterm-touchbar dircycle jsontools)
+plugins=(git brew xcode fasd zsh-iterm-touchbar dircycle jsontools zsh-autosuggestions zsh-syntax-highlighting)
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -86,7 +86,7 @@ export PROJECTS=~/Source
 source $ZSH/oh-my-zsh.sh
 
 # Enable fish-style syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but

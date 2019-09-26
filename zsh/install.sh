@@ -19,6 +19,12 @@ fi
 # install powerlevel9k oh-my-zsh theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
+# install syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+# install auto-suggestions`
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
 
 # This is leftover from installing custom Zsh themes.
 # Might be useful for future reference:
