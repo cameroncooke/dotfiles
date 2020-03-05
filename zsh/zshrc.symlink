@@ -126,7 +126,7 @@ do
 done
 
 # danger
-export DANGER_GITHUB_API_TOKEN="d762c66b8e05d27d8bef33efcfc189897ea96b17"
+export DANGER_GITHUB_API_TOKEN=""
 
 unset config_files
 
