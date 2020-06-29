@@ -20,11 +20,13 @@ fi
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # install syntax highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-myls
+-zsh/custom/plugins/zsh-syntax-highlighting
 
 # install auto-suggestions`
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
+git clone https://github.com/iam4x/zsh-iterm-touchbar.git ~/.oh-my-zsh/custom/plugins/zsh-iterm-touchbar
 
 # This is leftover from installing custom Zsh themes.
 # Might be useful for future reference:
