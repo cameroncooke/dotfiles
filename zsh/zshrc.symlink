@@ -82,6 +82,8 @@ plugins=(git brew xcode fasd zsh-iterm-touchbar dircycle jsontools zsh-autosugge
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Source
 
+ZSH_DISABLE_COMPFIX="true"
+
 # Load Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
