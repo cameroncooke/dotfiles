@@ -6,6 +6,10 @@ If you're interested in the philosophy behind why projects like these are
 awesome, you might want to [read Zach Holman's post on the
 subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
+## Apple Silicon
+
+For Apple Silicon based macs you can use the experimental `apple-silicon` branch which runs installers using the `arch -x86_64` prefix which ensures they run under Rosetta 2 to avoid compatability problems until full support for Apple's new chips is widely available.
+
 ## Topical
 
 Everything's built around topic areas. If you're adding a new area to your
