@@ -49,7 +49,7 @@
 [user]
 	name = Cameron Cooke
 	email = web@cameroncooke.com
-	signingkey = 79A651176F2F538593704BEA62F67CD783E86C55
+	signingkey = 4B51D1450E32F2F44EE4574934C167537B90D921
 [gpg]
 	program = /usr/local/bin/gpg
 [commit]
