@@ -54,3 +54,7 @@
 	program = /usr/local/bin/gpg
 [commit]
 	gpgsign = true
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main

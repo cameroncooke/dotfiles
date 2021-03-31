@@ -139,6 +139,7 @@ source $HOME/.git-flow-completion.zsh
 export PATH="/usr/local/Cellar:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"

@@ -1,10 +1,17 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
-
-brew 'ack'
-brew 'coreutils'
+brew "ack"
+brew "openssl@1.1"
+brew "readline"
+brew "awscli"
+brew "coreutils"
+brew "fasd"
 brew 'gist'
+brew "git-flow"
 brew 'go'
 brew 'grc'
 brew 'hub'
@@ -24,7 +31,6 @@ brew 'spark'
 brew 'tmux'
 brew 'unrar'
 brew 'wget'
-brew 'xctool'
 brew 'youtube-dl'
 brew 'zsh-syntax-highlighting'
 brew 'git-flow'
