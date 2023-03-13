@@ -20,10 +20,24 @@
 	    editor = subl -n -w
 [apply]
         whitespace = nowarn
+[merge]
+        tool = vscode
+
 [mergetool]
         keepBackup = false
+
+[mergetool "vscode"]
+        cmd = code --wait --new-window $MERGED
+
+[diff]
+        tool = vscode
+
 [difftool]
         prompt = false
+        
+[difftool "vscode"]
+        cmd = code --wait --diff --new-window $LOCAL $REMOTE
+
 [help]
         autocorrect = 1
 [push]
@@ -36,13 +50,6 @@
 	required = true
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
-
-[mergetool "mergepbx"]
-    cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
-
-[merge "mergepbx"]
-        name = XCode project files merger
-        driver = mergepbx %O %A %B
         
 [credential]
 	helper = osxkeychain

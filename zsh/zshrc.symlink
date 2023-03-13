@@ -141,6 +141,8 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
+export GRAPHVIZ_DOT="/opt/homebrew/Cellar/graphviz/2.48.0/bin/dot"
+
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
