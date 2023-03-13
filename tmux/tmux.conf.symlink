@@ -29,3 +29,6 @@ bind r source-file ~/.tmux.conf
 # open new screens in same working directory
 bind c new-window -c "#{pane_current_path}"
 
+# Fig Tmux Integration: Enabled
+source-file ~/.fig/tmux
+# End of Fig Tmux Integration
