@@ -21,20 +21,22 @@
 [apply]
         whitespace = nowarn
 [merge]
-        tool = vscode
+	tool = Kaleidoscope
 
 [mergetool]
         keepBackup = false
 
+	prompt = false
 [mergetool "vscode"]
         cmd = code --wait --new-window $MERGED
 
 [diff]
-        tool = vscode
+	tool = Kaleidoscope
 
 [difftool]
-        prompt = false
+	prompt = false
         
+	trustExitCode = true
 [difftool "vscode"]
         cmd = code --wait --diff --new-window $LOCAL $REMOTE
 
@@ -56,12 +58,20 @@
 [user]
 	name = Cameron Cooke
 	email = web@cameroncooke.com
-	signingkey = 4B51D1450E32F2F44EE4574934C167537B90D921
+	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+rd3eeQ45fVFHxzr8R/Q/ETKXmVPUCMgJUa14+dv7jR9KwoYuNjM1iyHBKLeAf9ZOjuzEqv77tkLyB5cuKfWEMdGTMeZA/c48+HZpmkOrg5jBm8LUirIgOlkIzSDlig+PZWZyrUFHcVJqCdm/m6f56Co3SWKQVQGlRzvruykjpU6hltNnnI/xJQj8u4AkqUnXUPf6VQd3TzBVAz0Zu/eevBjpKCcOBIYLL8NyYbYIvu8lyRvC+i7M7QQTHWvT6fnxbxzcNeMt7kDqff/rd6ZHYkf9vnXp+DH5VUmNmspTNuRsTZTHh/cylJxOJqOf+wv8J/F4CYR5U5P8C0oIMkH02kWhzXYSzAsaDx4qfj07VDcjbyqDm/ZJyV6mrXf7+7vyWOmOhnXRYLZ9k8HOhmmwKykpB4T/J/971jAJZ4XVaEBCCpcgOyG8fggcdbfY0Ub4MVMI/QxRC/QQ1WwVuuIaCYSUf8vrwbQiMu/OBtfBi7WGkeuQFek0SpaW8OxdxfIkVxeg+a9KTMH9WGifE5wPJyfZuS3JZG6h7axz9PYlzYMows2G4/Q100hyAK5UYSfB9Mxn0i/SmNkXs2l67htQNIYK3/oioywXWUdPJo3b6rMrv8Cemx3WoMrIhxk1OqoJjYATku1dMLigOznVUn3xOYqYRCNdQTiL8SPCEnVQJw==
 [gpg]
 	program = /usr/local/bin/gpg
+	format = ssh
 [commit]
 	gpgsign = true
 [pull]
 	rebase = false
 [init]
 	defaultBranch = main
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
