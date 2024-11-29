@@ -50,18 +50,17 @@
 	default = current
 [filter "lfs"]
 	required = true
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
         
 [credential]
 	helper = osxkeychain
 [user]
 	name = Cameron Cooke
-	email = web@cameroncooke.com
-	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC+rd3eeQ45fVFHxzr8R/Q/ETKXmVPUCMgJUa14+dv7jR9KwoYuNjM1iyHBKLeAf9ZOjuzEqv77tkLyB5cuKfWEMdGTMeZA/c48+HZpmkOrg5jBm8LUirIgOlkIzSDlig+PZWZyrUFHcVJqCdm/m6f56Co3SWKQVQGlRzvruykjpU6hltNnnI/xJQj8u4AkqUnXUPf6VQd3TzBVAz0Zu/eevBjpKCcOBIYLL8NyYbYIvu8lyRvC+i7M7QQTHWvT6fnxbxzcNeMt7kDqff/rd6ZHYkf9vnXp+DH5VUmNmspTNuRsTZTHh/cylJxOJqOf+wv8J/F4CYR5U5P8C0oIMkH02kWhzXYSzAsaDx4qfj07VDcjbyqDm/ZJyV6mrXf7+7vyWOmOhnXRYLZ9k8HOhmmwKykpB4T/J/971jAJZ4XVaEBCCpcgOyG8fggcdbfY0Ub4MVMI/QxRC/QQ1WwVuuIaCYSUf8vrwbQiMu/OBtfBi7WGkeuQFek0SpaW8OxdxfIkVxeg+a9KTMH9WGifE5wPJyfZuS3JZG6h7axz9PYlzYMows2G4/Q100hyAK5UYSfB9Mxn0i/SmNkXs2l67htQNIYK3/oioywXWUdPJo3b6rMrv8Cemx3WoMrIhxk1OqoJjYATku1dMLigOznVUn3xOYqYRCNdQTiL8SPCEnVQJw==
+	email = cameroncooke@notonthehighstreet.com
 [gpg]
 	program = /usr/local/bin/gpg
-	format = ssh
 [commit]
 	gpgsign = true
 [pull]
