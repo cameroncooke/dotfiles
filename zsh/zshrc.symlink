@@ -143,6 +143,8 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH=~/.npm-global/bin:$PATH
+export PATH="/Users/cameroncooke/Library/Python/3.9/bin:$PATH"
+export PATH="/Users/cameroncooke/Developer/OpenSource/xcodemake:$PATH"
 
 export PATH="$HOME/Developer/aws-scripts:$PATH"
 export AWS_PROFILE_ALIASES=true
@@ -174,31 +176,17 @@ if [ -f '/Users/cameron/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Use
 if [ -f '/Users/cameron/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cameron/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # aws-scripts
-export PATH="$PATH:/Users/cameroncooke/Developer/aws-scripts"
+export PATH="$PATH:/Users/cameron/aws-scripts"
 export AWS_PROFILE_ALIASES=true
-source /Users/cameroncooke/Developer/aws-scripts/aws-profile-function.sh
+source /Users/cameron/aws-scripts/aws-profile-function.sh
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
 
-# aws-scripts
-export PATH="$PATH:/Users/cameron/aws-scripts"
-export AWS_PROFILE_ALIASES=true
-source /Users/cameroncooke/aws-scripts/aws-profile-function.sh
-
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source /Users/cameroncooke/.config/op/plugins.sh
 
-export LDFLAGS="-L/opt/homebrew/opt/mysql@8.0/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/mysql@8.0/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql@8.0/lib/pkgconfig"
-
-export PATH="$PATH:/Users/cameroncooke/aws-scripts"
-export AWS_PROFILE_ALIASES=true
-source /Users/cameroncooke/aws-scripts/aws-profile-function.sh
-export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
-
-export PATH="/opt/homebrew/opt/httpd/bin/httpd:$PATH"
-
-export GEM_PATH=$(bundle info rake --path)/..
+# Added by Windsurf - Next
+export PATH="/Users/cameroncooke/.codeium/windsurf/bin:$PATH"
