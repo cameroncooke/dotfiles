@@ -1,18 +1,11 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 cask_args appdir: '/Applications'
 
-tap 'homebrew/bundle'
 brew "ack"
-brew "openssl@1.1"
 brew "readline"
 brew "awscli"
 brew "coreutils"
-brew "fasd"
 brew 'gist'
 brew "git-flow"
-brew 'go'
 brew 'grc'
 brew 'imagemagick'
 brew 'jp2a'
@@ -28,10 +21,11 @@ brew 'roundup'
 brew 'spaceman-diff'
 brew 'spark'
 brew 'tmux'
-brew 'unrar'
 brew 'wget'
-brew 'youtube-dl'
 brew 'zsh-syntax-highlighting'
 brew 'git-flow'
-brew 'fasd'
-brew 'mergepbx'
+cask 'tuist'
+brew 'xcode-build-server'
+brew 'gh'
+brew 'nano'
+cask 'amazon-q'
