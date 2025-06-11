@@ -6,9 +6,33 @@ set -e
 
 cd "$(dirname $0)"/..
 
+# Ensure Homebrew is in PATH
+if [[ "$(uname -m)" == "arm64" ]] && [[ -f "/opt/homebrew/bin/brew" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -f "/usr/local/bin/brew" ]]; then
+  eval "$(/usr/local/bin/brew shellenv)"
+fi
+
+# Check if brew is available
+if ! command -v brew &> /dev/null; then
+  echo "Error: Homebrew is not installed or not in PATH"
+  exit 1
+fi
+
 # Run Homebrew through the Brewfile
 echo "› brew bundle"
-brew bundle || true
+if [[ -f "Brewfile" ]]; then
+  echo "  Installing packages from Brewfile..."
+  brew bundle --verbose || {
+    echo "  Warning: Some brew packages failed to install"
+  }
+else
+  echo "  No Brewfile found"
+fi
 
 # find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+echo "› Running individual installers..."
+find . -name install.sh -not -path "./script/*" -not -path "./homebrew/*" | while read installer ; do 
+  echo "  Running ${installer}..."
+  sh -c "${installer}" || echo "  Warning: ${installer} failed"
+done

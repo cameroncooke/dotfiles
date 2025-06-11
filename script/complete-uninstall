@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+#
+# complete-uninstall
+#
+# WARNING: This removes EVERYTHING including Homebrew and all packages!
+
+echo ''
+echo '  ⚠️  COMPLETE UNINSTALL WARNING ⚠️'
+echo ''
+echo '  This will remove:'
+echo '  - All dotfiles (via uninstall script)'
+echo '  - Homebrew and ALL packages'
+echo '  - All applications installed by Homebrew'
+echo '  - Node.js, Python, Ruby environments'
+echo ''
+echo '  This is DESTRUCTIVE and will affect your entire system!'
+echo ''
+read -p "Are you ABSOLUTELY sure? Type 'YES' to continue: " confirm
+
+if [ "$confirm" != "YES" ]; then
+    echo "Cancelled."
+    exit 0
+fi
+
+# Run the regular uninstall first
+echo "Running dotfiles uninstall..."
+echo "y" | ./script/uninstall
+
+# Remove Homebrew completely
+echo "Removing Homebrew completely..."
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)" || true
+
+# Remove any remaining Homebrew directories
+sudo rm -rf /opt/homebrew /usr/local/Homebrew 2>/dev/null || true
+
+# Remove Homebrew from shell profiles
+if [ -f ~/.zprofile ]; then
+    sed -i '' '/homebrew/d' ~/.zprofile 2>/dev/null || true
+fi
+
+if [ -f ~/.bash_profile ]; then
+    sed -i '' '/homebrew/d' ~/.bash_profile 2>/dev/null || true
+fi
+
+echo ''
+echo '  ✅ Complete uninstall finished!'
+echo '  Your system is now in a clean state for testing.'
+echo ''

@@ -8,6 +8,18 @@ DOTFILES_ROOT=$(pwd -P)
 set -e
 
 echo ''
+echo '  ▓█████▄  ▒█████  ▄▄▄█████▓ █████▒██▓ ██▓    ▓█████   ██████ '
+echo '  ▒██▀ ██▌▒██▒  ██▒▓  ██▒ ▓▒▓██   ▒▓██▒▓██▒    ▓█   ▀ ▒██    ▒ '
+echo '  ░██   █▌▒██░  ██▒▒ ▓██░ ▒░▒████ ░▒██▒▒██░    ▒███   ░ ▓██▄   '
+echo '  ░▓█▄   ▌▒██   ██░░ ▓██▓ ░ ░▓█▒  ░░██░▒██░    ▒▓█  ▄   ▒   ██▒'
+echo '  ░▒████▓ ░ ████▓▒░  ▒██▒ ░ ░▒█░   ░██░░██████▒░▒████▒▒██████▒▒'
+echo '   ▒▒▓  ▒ ░ ▒░▒░▒░   ▒ ░░    ▒ ░   ░▓  ░ ▒░▓  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░'
+echo '   ░ ▒  ▒   ░ ▒ ▒░     ░     ░      ▒ ░░ ░ ▒  ░ ░ ░  ░░ ░▒  ░ ░'
+echo '   ░ ░  ░ ░ ░ ░ ▒    ░       ░ ░    ▒ ░  ░ ░      ░   ░  ░  ░  '
+echo '     ░        ░ ░                   ░      ░  ░   ░  ░      ░  '
+echo ''
+echo '  Welcome to dotfiles installation!'
+echo ''
 
 info () {
   printf "\r  [ \033[00;34m..\033[0m ] $1\n"
@@ -24,7 +36,7 @@ success () {
 fail () {
   printf "\r\033[2K  [\033[0;31mFAIL\033[0m] $1\n"
   echo ''
-  exit
+  exit 1
 }
 
 setup_gitconfig () {
@@ -137,20 +149,189 @@ install_dotfiles () {
   done
 }
 
-setup_gitconfig
-install_dotfiles
+check_prerequisites () {
+  info 'checking prerequisites'
+  
+  # Check for Xcode Command Line Tools on macOS
+  if [ "$(uname -s)" == "Darwin" ]; then
+    if ! xcode-select -p &> /dev/null; then
+      fail "Xcode Command Line Tools are required. Run: xcode-select --install"
+    fi
+  fi
+  
+  # Check for curl
+  if ! command -v curl &> /dev/null; then
+    fail "curl is required but not installed"
+  fi
+  
+  # Check for git
+  if ! command -v git &> /dev/null; then
+    fail "git is required but not installed"
+  fi
+  
+  success 'prerequisites ok'
+}
 
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "installing dependencies"
-  if source bin/dot > /tmp/dotfiles-dot 2>&1
-  then
+install_homebrew () {
+  info 'installing homebrew'
+  
+  # Ensure Homebrew is in PATH for this session
+  if [[ "$(uname -m)" == "arm64" ]] && [[ -f "/opt/homebrew/bin/brew" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  elif [[ -f "/usr/local/bin/brew" ]]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
+  
+  if ! command -v brew &> /dev/null; then
+    info "Homebrew not found, installing..."
+    if $DOTFILES_ROOT/homebrew/install.sh; then
+      # Re-source Homebrew environment
+      if [[ "$(uname -m)" == "arm64" ]] && [[ -f "/opt/homebrew/bin/brew" ]]; then
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+      elif [[ -f "/usr/local/bin/brew" ]]; then
+        eval "$(/usr/local/bin/brew shellenv)"
+      fi
+      success "Homebrew installed"
+    else
+      fail "Failed to install Homebrew"
+    fi
+  else
+    success "Homebrew already installed"
+  fi
+}
+
+install_oh_my_zsh () {
+  info 'installing oh-my-zsh and plugins'
+  
+  if $DOTFILES_ROOT/zsh/install-oh-my-zsh.sh; then
+    success "oh-my-zsh installed"
+  else
+    user "Warning: oh-my-zsh installation had issues"
+  fi
+}
+
+install_fonts () {
+  info 'installing powerline fonts'
+  
+  if $DOTFILES_ROOT/fonts/install.sh; then
+    success "fonts installed"
+  else
+    user "Warning: font installation had issues"
+  fi
+}
+
+install_dependencies () {
+  info 'installing dependencies'
+  
+  # Run the dot script
+  if source bin/dot; then
     success "dependencies installed"
   else
-    fail "error installing dependencies"
+    user "Warning: some dependencies may have failed to install"
   fi
+}
+
+run_installers () {
+  info 'running component installers'
+  
+  # Find all install.sh scripts and run them (excluding homebrew and script directories)
+  find "$DOTFILES_ROOT" -name install.sh -not -path "*/script/*" -not -path "*/homebrew/*" | sort | while read installer; do
+    local component=$(basename $(dirname "$installer"))
+    echo "   Running ${component} installer..."
+    if sh -c "${installer}"; then
+      echo "   ✓ ${component} completed"
+    else
+      echo "   ⚠ ${component} had issues"
+    fi
+  done
+  
+  success 'component installers completed'
+}
+
+validate_installation () {
+  info 'validating installation'
+  
+  local issues=0
+  
+  # Check critical tools
+  if ! command -v brew &> /dev/null; then
+    echo "   ⚠ Homebrew not found in PATH"
+    issues=$((issues + 1))
+  fi
+  
+  if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    echo "   ⚠ Oh My Zsh not installed"
+    issues=$((issues + 1))
+  fi
+  
+  if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+    echo "   ⚠ Powerlevel10k theme not installed"
+    issues=$((issues + 1))
+  fi
+  
+  if [ ! -f "$HOME/Library/Fonts/MesloLGS NF Regular.ttf" ]; then
+    echo "   ⚠ Powerlevel10k fonts not installed"
+    issues=$((issues + 1))
+  fi
+  
+  if [ $issues -eq 0 ]; then
+    success 'validation passed'
+  else
+    user "validation completed with $issues issues"
+  fi
+}
+
+post_install_message () {
+  echo ''
+  echo '  █████ ░▄▄▄█████▓ ▓█████ '
+  echo ' ▒██   ▒▓  ██▒ ▓▒▓█   ▀ '
+  echo ' ▒████ ░▒ ▓██░ ▒░▒███   '
+  echo ' ▓█▒  ░░ ▓██▓ ░ ▒▓█  ▄ '
+  echo ' ░▒█░   ░  ▒██▒ ░ ░▒████▒'
+  echo '  ▒ ░     ▒ ░░   ░░ ▒░ ░'
+  echo '  ░       ░      ░ ░  ░'
+  echo '  ░     ░        ░    '
+  echo ''
+  echo '  ✨ Installation Complete! ✨'
+  echo ''
+  echo '  🚀 Next Steps:'
+  echo '  1. Restart your terminal or run: source ~/.zshrc'
+  echo '  2. Configure iTerm2 to use "MesloLGS NF" font (Preferences → Profiles → Text → Font)'
+  echo '  3. Run "p10k configure" to customize your Powerlevel10k prompt'
+  echo '  4. Edit ~/.localrc to add your local environment variables'
+  echo '  5. If any components failed, check the specific error messages above'
+  echo ''
+  echo '  🛠  Available Commands:'
+  echo '  - dot: Update dependencies and configurations'
+  echo '  - script/bootstrap: Re-run this installation'
+  echo '  - brew bundle: Install/update Homebrew packages'
+  echo '  - p10k configure: Configure Powerlevel10k theme'
+  echo ''
+  echo '  📝 Documentation:'
+  echo '  - Dotfiles README: ~/.dotfiles/README.md'
+  echo '  - Local config: ~/.localrc'
+  echo '  - Zsh config: ~/.zshrc'
+  echo ''
+}
+
+# Main installation flow
+check_prerequisites
+setup_gitconfig
+install_homebrew
+install_oh_my_zsh
+install_fonts
+install_dotfiles
+
+# If we're on a Mac, let's install and setup homebrew packages
+if [ "$(uname -s)" == "Darwin" ]; then
+  install_dependencies
 fi
 
-echo ''
-echo '  All installed!'
+# Run all component installers
+run_installers
+
+# Validate installation
+validate_installation
+
+# Show completion message
+post_install_message

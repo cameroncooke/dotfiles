@@ -1,0 +1,262 @@
+
+  ▓█████▄  ▒█████  ▄▄▄█████▓ █████▒██▓ ██▓    ▓█████   ██████ 
+  ▒██▀ ██▌▒██▒  ██▒▓  ██▒ ▓▒▓██   ▒▓██▒▓██▒    ▓█   ▀ ▒██    ▒ 
+  ░██   █▌▒██░  ██▒▒ ▓██░ ▒░▒████ ░▒██▒▒██░    ▒███   ░ ▓██▄   
+  ░▓█▄   ▌▒██   ██░░ ▓██▓ ░ ░▓█▒  ░░██░▒██░    ▒▓█  ▄   ▒   ██▒
+  ░▒████▓ ░ ████▓▒░  ▒██▒ ░ ░▒█░   ░██░░██████▒░▒████▒▒██████▒▒
+   ▒▒▓  ▒ ░ ▒░▒░▒░   ▒ ░░    ▒ ░   ░▓  ░ ▒░▓  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+   ░ ▒  ▒   ░ ▒ ▒░     ░     ░      ▒ ░░ ░ ▒  ░ ░ ░  ░░ ░▒  ░ ░
+   ░ ░  ░ ░ ░ ░ ▒    ░       ░ ░    ▒ ░  ░ ░      ░   ░  ░  ░  
+     ░        ░ ░                   ░      ░  ░   ░  ░      ░  
+
+  Welcome to dotfiles installation!
+
+  [ [00;34m..[0m ] checking prerequisites
+[2K  [ [00;32mOK[0m ] prerequisites ok
+  [ [00;34m..[0m ] installing homebrew
+[2K  [ [00;32mOK[0m ] Homebrew already installed
+  [ [00;34m..[0m ] installing oh-my-zsh and plugins
+  Installing Oh My Zsh for you.
+Cloning Oh My Zsh...
+From https://github.com/ohmyzsh/ohmyzsh
+ * [new branch]      master     -> origin/master
+Already on 'master'
+branch 'master' set up to track 'origin/master'.
+/Users/cameroncooke/.dotfiles
+
+Looking for an existing zsh config...
+Using the Oh My Zsh template file and adding it to /Users/cameroncooke/.zshrc.
+
+         __                                     __   
+  ____  / /_     ____ ___  __  __   ____  _____/ /_  
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ 
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / 
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  
+                        /____/                       ....is now installed!
+
+
+Before you scream Oh My Zsh! look over the `.zshrc` file to select plugins, themes, and options.
+
+• Follow us on X: https://x.com/ohmyzsh
+• Join our Discord community: https://discord.gg/ohmyzsh
+• Get stickers, t-shirts, coffee mugs and more: https://shop.planetargon.com/collections/oh-my-zsh
+
+Run zsh to try it out.
+  Installing zsh-autosuggestions plugin...
+Cloning into '/Users/cameroncooke/.oh-my-zsh/custom/plugins/zsh-autosuggestions'...
+  Installing zsh-syntax-highlighting plugin...
+Cloning into '/Users/cameroncooke/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting'...
+  Installing Powerlevel10k theme...
+Cloning into '/Users/cameroncooke/.oh-my-zsh/custom/themes/powerlevel10k'...
+[2K  [ [00;32mOK[0m ] oh-my-zsh installed
+  [ [00;34m..[0m ] installing powerline fonts
+  Installing Powerlevel10k fonts...
+  Downloading MesloLGS NF fonts...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2533k  100 2533k    0     0  3079k      0 --:--:-- --:--:-- --:--:--  9.9M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 13 2542k   13  352k    0     0   483k      0  0:00:05 --:--:--  0:00:05  483k100 2542k  100 2542k    0     0  3230k      0 --:--:-- --:--:-- --:--:-- 36.8M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2493k  100 2493k    0     0  2732k      0 --:--:-- --:--:-- --:--:-- 2732k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2501k  100 2501k    0     0  2666k      0 --:--:-- --:--:-- --:--:-- 2666k
+  Fonts installed to /Users/cameroncooke/Library/Fonts
+  NOTE: You'll need to configure iTerm2 to use 'MesloLGS NF' font
+        Go to iTerm2 → Preferences → Profiles → Text → Font
+/Users/cameroncooke/.dotfiles
+  Powerlevel10k fonts installed successfully
+[2K  [ [00;32mOK[0m ] fonts installed
+  [ [00;34m..[0m ] installing dotfiles
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/tmux/tmux.conf.symlink to /Users/cameroncooke/.tmux.conf
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/zsh/zprofile.symlink to /Users/cameroncooke/.zprofile
+  [ [0;33m??[0m ] File already exists: /Users/cameroncooke/.zshrc (zshrc.symlink), what do you want to do?
+        [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all?
+[2K  [ [00;32mOK[0m ] removed /Users/cameroncooke/.zshrc
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/zsh/zshrc.symlink to /Users/cameroncooke/.zshrc
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/ruby/rubocop.yml.symlink to /Users/cameroncooke/.rubocop.yml
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/ruby/gemrc.symlink to /Users/cameroncooke/.gemrc
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/ruby/irbrc.symlink to /Users/cameroncooke/.irbrc
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/git/gitconfig.symlink to /Users/cameroncooke/.gitconfig
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/git/gitconfig.local.symlink to /Users/cameroncooke/.gitconfig.local
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/git/git-flow-completion.zsh.symlink to /Users/cameroncooke/.git-flow-completion.zsh
+[2K  [ [00;32mOK[0m ] linked /Users/cameroncooke/.dotfiles/git/gitignore.symlink to /Users/cameroncooke/.gitignore
+  [ [00;34m..[0m ] installing dependencies
+› Installing/updating Homebrew...
+  Homebrew already installed
+› brew update
+==> Updating Homebrew...
+Already up-to-date.
+› /Users/cameroncooke/.dotfiles/script/install
+› brew bundle
+  Installing packages from Brewfile...
+Skipping install of git formula. It is already installed.
+Using git
+Skipping install of git-flow formula. It is already installed.
+Using git-flow
+Skipping install of gh formula. It is already installed.
+Using gh
+Skipping install of gist formula. It is already installed.
+Using gist
+Skipping install of wget formula. It is already installed.
+Using wget
+Skipping install of curl formula. It is already installed.
+Using curl
+Skipping install of coreutils formula. It is already installed.
+Using coreutils
+Skipping install of findutils formula. It is already installed.
+Using findutils
+Skipping install of gnu-sed formula. It is already installed.
+Using gnu-sed
+Skipping install of gawk formula. It is already installed.
+Using gawk
+Skipping install of grep formula. It is already installed.
+Using grep
+Skipping install of zsh formula. It is already installed.
+Using zsh
+Skipping install of zsh-completions formula. It is already installed.
+Using zsh-completions
+Skipping install of zsh-syntax-highlighting formula. It is already installed.
+Using zsh-syntax-highlighting
+Skipping install of zsh-autosuggestions formula. It is already installed.
+Using zsh-autosuggestions
+Skipping install of bash formula. It is already installed.
+Using bash
+Skipping install of bash-completion@2 formula. It is already installed.
+Using bash-completion@2
+Skipping install of node formula. It is already installed.
+Using node
+Skipping install of python@3.12 formula. It is already installed.
+Using python@3.12
+Skipping install of ruby formula. It is already installed.
+Using ruby
+Skipping install of rbenv formula. It is already installed.
+Using rbenv
+Skipping install of ruby-build formula. It is already installed.
+Using ruby-build
+Skipping install of nvm formula. It is already installed.
+Using nvm
+Skipping install of yarn formula. It is already installed.
+Using yarn
+Skipping install of mise formula. It is already installed.
+Using mise
+Skipping install of tmux formula. It is already installed.
+Using tmux
+Skipping install of grc formula. It is already installed.
+Using grc
+Installing zoxide
+Installing zoxide formula. It is not currently installed.
+Warning: You are using macOS 26.
+We do not provide support for this pre-release version.
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/zoxide/manifests/0.9.8
+==> Fetching zoxide
+==> Downloading https://ghcr.io/v2/homebrew/core/zoxide/blobs/sha256:6cea8e6116f5dcc487213bc9f1013447ba766967294c091f479858969764ebfa
+==> Pouring zoxide--0.9.8.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/zoxide/0.9.8: 18 files, 1MB
+==> Running `brew cleanup zoxide`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+Skipping install of bat formula. It is already installed.
+Using bat
+Skipping install of eza formula. It is already installed.
+Using eza
+Skipping install of fd formula. It is already installed.
+Using fd
+Skipping install of ripgrep formula. It is already installed.
+Using ripgrep
+Skipping install of fzf formula. It is already installed.
+Using fzf
+Skipping install of tree formula. It is already installed.
+Using tree
+Skipping install of htop formula. It is already installed.
+Using htop
+Skipping install of tldr formula. It is already installed.
+Using tldr
+Skipping install of jq formula. It is already installed.
+Using jq
+Skipping install of yq formula. It is already installed.
+Using yq
+Skipping install of awscli formula. It is already installed.
+Using awscli
+Skipping install of aws-sam-cli formula. It is already installed.
+Using aws-sam-cli
+Skipping install of postgresql@16 formula. It is already installed.
+Using postgresql@16
+Skipping install of mysql formula. It is already installed.
+Using mysql
+Skipping install of redis formula. It is already installed.
+Using redis
+Skipping install of imagemagick formula. It is already installed.
+Using imagemagick
+Skipping install of jp2a formula. It is already installed.
+Using jp2a
+Skipping install of libcaca formula. It is already installed.
+Using libcaca
+Skipping install of openssl formula. It is already installed.
+Using openssl
+Skipping install of readline formula. It is already installed.
+Using readline
+Skipping install of libgit2 formula. It is already installed.
+Using libgit2
+Skipping install of pkg-config formula. It is already installed.
+Using pkg-config
+Skipping install of cmake formula. It is already installed.
+Using cmake
+Skipping install of xcode-build-server formula. It is already installed.
+Using xcode-build-server
+Skipping install of swiftlint formula. It is already installed.
+Using swiftlint
+Skipping install of swiftformat formula. It is already installed.
+Using swiftformat
+Skipping install of ack formula. It is already installed.
+Using ack
+Skipping install of roundup formula. It is already installed.
+Using roundup
+Skipping install of spaceman-diff formula. It is already installed.
+Using spaceman-diff
+Skipping install of spark formula. It is already installed.
+Using spark
+Skipping install of nano formula. It is already installed.
+Using nano
+Skipping install of watchman formula. It is already installed.
+Using watchman
+Skipping install of graphviz formula. It is already installed.
+Using graphviz
+Skipping install of perl formula. It is already installed.
+Using perl
+Skipping install of font-meslo-lg-nerd-font cask. It is already installed.
+Using font-meslo-lg-nerd-font
+Skipping install of iterm2 cask. It is already installed.
+Using iterm2
+Skipping install of visual-studio-code cask. It is already installed.
+Using visual-studio-code
+Installing docker
+Installing docker cask with --appdir=/Applications --adopt. It is not currently installed.
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-cask/2f6e0078dfbc7e7f6af67bcbe8cbb8dbf95ed2ab/Casks/d/docker.rb
+Already downloaded: /Users/cameroncooke/Library/Caches/Homebrew/downloads/9373547106e1dc98d9d6ae36faefeb80b8a37f9ae5e298dcf7f0bb11950d3508--docker.rb
+==> Downloading https://desktop.docker.com/mac/main/arm64/195023/Docker.dmg
+==> Installing Cask docker
+==> Moving App 'Docker.app' to '/Applications/Docker.app'
+==> Linking Bash Completion 'docker-compose.bash-completion' to '/opt/homebrew/etc/bash_completion.d/docker-compose'
+==> Linking Bash Completion 'docker.bash-completion' to '/opt/homebrew/etc/bash_completion.d/docker'
+==> Linking Fish Completion 'docker-compose.fish-completion' to '/opt/homebrew/share/fish/vendor_completions.d/docker-compose.fish'
+==> Linking Fish Completion 'docker.fish-completion' to '/opt/homebrew/share/fish/vendor_completions.d/docker.fish'
+==> Linking Zsh Completion 'docker-compose.zsh-completion' to '/opt/homebrew/share/zsh/site-functions/_docker-compose'
+==> Linking Zsh Completion 'docker.zsh-completion' to '/opt/homebrew/share/zsh/site-functions/_docker'
+==> Linking Binary 'kubectl' to '/usr/local/bin/kubectl.docker'

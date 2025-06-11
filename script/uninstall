@@ -1,0 +1,110 @@
+#!/usr/bin/env bash
+#
+# uninstall
+#
+# Removes all dotfiles components for clean testing
+
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+
+echo ''
+echo '  🗑️  Uninstalling Dotfiles...'
+echo ''
+echo '  ⚠️  This will remove:'
+echo '  - All symlinked dotfiles'
+echo '  - Oh My Zsh installation'
+echo '  - Powerlevel10k theme'
+echo '  - Installed fonts'
+echo '  - Global npm packages'
+echo '  - NVM installation'
+echo ''
+read -p "Are you sure you want to continue? (y/N): " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    echo "Cancelled."
+    exit 0
+fi
+
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
+success () {
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+}
+
+user () {
+  printf "\r  [ \033[0;33m??\033[0m ] $1\n"
+}
+
+echo ''
+
+# Remove symlinked dotfiles
+info 'removing symlinked dotfiles'
+for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
+do
+  dst="$HOME/.$(basename "${src%.*}")"
+  if [ -L "$dst" ]; then
+    rm "$dst"
+    echo "   removed $dst"
+  fi
+done
+success 'symlinked dotfiles removed'
+
+# Remove Oh My Zsh
+if [ -d "$HOME/.oh-my-zsh" ]; then
+  info 'removing oh-my-zsh'
+  rm -rf "$HOME/.oh-my-zsh"
+  success 'oh-my-zsh removed'
+fi
+
+# Remove NVM
+if [ -d "$HOME/.nvm" ]; then
+  info 'removing nvm'
+  rm -rf "$HOME/.nvm"
+  success 'nvm removed'
+fi
+
+# Remove fonts
+info 'removing powerline fonts'
+rm -f "$HOME/Library/Fonts/MesloLGS NF"*.ttf
+success 'powerline fonts removed'
+
+# Remove global npm packages (if npm is available)
+if command -v npm &> /dev/null; then
+  info 'removing global npm packages'
+  npm uninstall -g @anthropic-ai/claude-code 2>/dev/null || true
+  npm uninstall -g typescript 2>/dev/null || true
+  npm uninstall -g @angular/cli 2>/dev/null || true
+  npm uninstall -g create-react-app 2>/dev/null || true
+  npm uninstall -g http-server 2>/dev/null || true
+  npm uninstall -g live-server 2>/dev/null || true
+  npm uninstall -g nodemon 2>/dev/null || true
+  npm uninstall -g prettier 2>/dev/null || true
+  npm uninstall -g eslint 2>/dev/null || true
+  success 'global npm packages removed'
+fi
+
+# Remove local config files
+info 'removing local config files'
+rm -f "$HOME/.localrc"
+rm -f "$HOME/.p10k.zsh"
+rm -f "$HOME/.git-flow-completion.zsh"
+success 'local config files removed'
+
+# Reset shell to default if it's zsh
+if [ "$SHELL" = "$(which zsh)" ]; then
+  info 'resetting shell to bash'
+  chsh -s /bin/bash || user 'could not reset shell to bash'
+  success 'shell reset to bash'
+fi
+
+echo ''
+echo '  ✅ Uninstall Complete!'
+echo ''
+echo '  Note: Homebrew and its packages are still installed.'
+echo '  To completely remove Homebrew, run:'
+echo '  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"'
+echo ''
+echo '  To test installation, run: script/bootstrap'
+echo ''

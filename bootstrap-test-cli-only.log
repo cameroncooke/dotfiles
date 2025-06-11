@@ -1,0 +1,2060 @@
+
+  ▓█████▄  ▒█████  ▄▄▄█████▓ █████▒██▓ ██▓    ▓█████   ██████ 
+  ▒██▀ ██▌▒██▒  ██▒▓  ██▒ ▓▒▓██   ▒▓██▒▓██▒    ▓█   ▀ ▒██    ▒ 
+  ░██   █▌▒██░  ██▒▒ ▓██░ ▒░▒████ ░▒██▒▒██░    ▒███   ░ ▓██▄   
+  ░▓█▄   ▌▒██   ██░░ ▓██▓ ░ ░▓█▒  ░░██░▒██░    ▒▓█  ▄   ▒   ██▒
+  ░▒████▓ ░ ████▓▒░  ▒██▒ ░ ░▒█░   ░██░░██████▒░▒████▒▒██████▒▒
+   ▒▒▓  ▒ ░ ▒░▒░▒░   ▒ ░░    ▒ ░   ░▓  ░ ▒░▓  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+   ░ ▒  ▒   ░ ▒ ▒░     ░     ░      ▒ ░░ ░ ▒  ░ ░ ░  ░░ ░▒  ░ ░
+   ░ ░  ░ ░ ░ ░ ▒    ░       ░ ░    ▒ ░  ░ ░      ░   ░  ░  ░  
+     ░        ░ ░                   ░      ░  ░   ░  ░      ░  
+
+  Welcome to dotfiles installation!
+
+  [ [00;34m..[0m ] checking prerequisites
+[2K  [ [00;32mOK[0m ] prerequisites ok
+  [ [00;34m..[0m ] installing homebrew
+[2K  [ [00;32mOK[0m ] Homebrew already installed
+  [ [00;34m..[0m ] installing oh-my-zsh and plugins
+  Oh My Zsh already installed
+  zsh-autosuggestions already installed
+  zsh-syntax-highlighting already installed
+  Powerlevel10k already installed
+[2K  [ [00;32mOK[0m ] oh-my-zsh installed
+  [ [00;34m..[0m ] installing powerline fonts
+  Installing Powerlevel10k fonts...
+  Downloading MesloLGS NF fonts...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2533k  100 2533k    0     0  3943k      0 --:--:-- --:--:-- --:--:-- 3943k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2542k  100 2542k    0     0  4021k      0 --:--:-- --:--:-- --:--:-- 4021k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2493k  100 2493k    0     0  4039k      0 --:--:-- --:--:-- --:--:-- 4039k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2501k  100 2501k    0     0  3433k      0 --:--:-- --:--:-- --:--:-- 3433k
+  Fonts installed to /Users/cameroncooke/Library/Fonts
+  NOTE: You'll need to configure iTerm2 to use 'MesloLGS NF' font
+        Go to iTerm2 → Preferences → Profiles → Text → Font
+/Users/cameroncooke/.dotfiles
+  Powerlevel10k fonts installed successfully
+[2K  [ [00;32mOK[0m ] fonts installed
+  [ [00;34m..[0m ] installing dotfiles
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/tmux/tmux.conf.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/zsh/zprofile.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/zsh/zshrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/ruby/rubocop.yml.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/ruby/gemrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/ruby/irbrc.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/git/gitconfig.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/git/gitconfig.local.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/git/git-flow-completion.zsh.symlink
+[2K  [ [00;32mOK[0m ] skipped /Users/cameroncooke/.dotfiles/git/gitignore.symlink
+  [ [00;34m..[0m ] installing dependencies
+› Installing/updating Homebrew...
+  Homebrew already installed
+› brew update
+==> Updating Homebrew...
+Already up-to-date.
+› /Users/cameroncooke/.dotfiles/script/install
+› brew bundle
+  Installing packages from Brewfile...
+Skipping install of git formula. It is already installed.
+Using git
+Skipping install of git-flow formula. It is already installed.
+Using git-flow
+Skipping install of gh formula. It is already installed.
+Using gh
+Skipping install of gist formula. It is already installed.
+Using gist
+Skipping install of wget formula. It is already installed.
+Using wget
+Skipping install of curl formula. It is already installed.
+Using curl
+Skipping install of coreutils formula. It is already installed.
+Using coreutils
+Skipping install of findutils formula. It is already installed.
+Using findutils
+Skipping install of gnu-sed formula. It is already installed.
+Using gnu-sed
+Skipping install of gawk formula. It is already installed.
+Using gawk
+Skipping install of grep formula. It is already installed.
+Using grep
+Skipping install of zsh formula. It is already installed.
+Using zsh
+Skipping install of zsh-completions formula. It is already installed.
+Using zsh-completions
+Skipping install of zsh-syntax-highlighting formula. It is already installed.
+Using zsh-syntax-highlighting
+Skipping install of zsh-autosuggestions formula. It is already installed.
+Using zsh-autosuggestions
+Skipping install of bash formula. It is already installed.
+Using bash
+Skipping install of bash-completion@2 formula. It is already installed.
+Using bash-completion@2
+Skipping install of node formula. It is already installed.
+Using node
+Skipping install of python@3.12 formula. It is already installed.
+Using python@3.12
+Skipping install of ruby formula. It is already installed.
+Using ruby
+Skipping install of rbenv formula. It is already installed.
+Using rbenv
+Skipping install of ruby-build formula. It is already installed.
+Using ruby-build
+Skipping install of nvm formula. It is already installed.
+Using nvm
+Skipping install of yarn formula. It is already installed.
+Using yarn
+Skipping install of mise formula. It is already installed.
+Using mise
+Skipping install of tmux formula. It is already installed.
+Using tmux
+Skipping install of grc formula. It is already installed.
+Using grc
+Skipping install of zoxide formula. It is already installed.
+Using zoxide
+Skipping install of bat formula. It is already installed.
+Using bat
+Skipping install of eza formula. It is already installed.
+Using eza
+Skipping install of fd formula. It is already installed.
+Using fd
+Skipping install of ripgrep formula. It is already installed.
+Using ripgrep
+Skipping install of fzf formula. It is already installed.
+Using fzf
+Skipping install of tree formula. It is already installed.
+Using tree
+Skipping install of htop formula. It is already installed.
+Using htop
+Skipping install of tldr formula. It is already installed.
+Using tldr
+Skipping install of jq formula. It is already installed.
+Using jq
+Skipping install of yq formula. It is already installed.
+Using yq
+Skipping install of awscli formula. It is already installed.
+Using awscli
+Skipping install of aws-sam-cli formula. It is already installed.
+Using aws-sam-cli
+Skipping install of postgresql@16 formula. It is already installed.
+Using postgresql@16
+Skipping install of mysql formula. It is already installed.
+Using mysql
+Skipping install of redis formula. It is already installed.
+Using redis
+Skipping install of imagemagick formula. It is already installed.
+Using imagemagick
+Skipping install of jp2a formula. It is already installed.
+Using jp2a
+Skipping install of libcaca formula. It is already installed.
+Using libcaca
+Skipping install of openssl formula. It is already installed.
+Using openssl
+Skipping install of readline formula. It is already installed.
+Using readline
+Skipping install of libgit2 formula. It is already installed.
+Using libgit2
+Skipping install of pkg-config formula. It is already installed.
+Using pkg-config
+Skipping install of cmake formula. It is already installed.
+Using cmake
+Skipping install of xcode-build-server formula. It is already installed.
+Using xcode-build-server
+Skipping install of swiftlint formula. It is already installed.
+Using swiftlint
+Skipping install of swiftformat formula. It is already installed.
+Using swiftformat
+Installing docker
+Installing docker formula. It is not currently installed.
+Warning: You are using macOS 26.
+We do not provide support for this pre-release version.
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/docker/manifests/28.2.2
+==> Fetching dependencies for docker: docker-completion
+==> Downloading https://ghcr.io/v2/homebrew/core/docker-completion/manifests/28.2.2
+==> Fetching docker-completion
+==> Downloading https://ghcr.io/v2/homebrew/core/docker-completion/blobs/sha256:d1e4eeba6a1ec5b740b3cffef871be8cb2e63164a5d55c8d7a50e91a6395f8ba
+==> Fetching docker
+==> Downloading https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:960354449a9dd1ca73eae7afcce85e9e542431b4b8e6a4fa6ebcdd47b7adfd5e
+==> Installing dependencies for docker: docker-completion
+==> Installing docker dependency: docker-completion
+==> Downloading https://ghcr.io/v2/homebrew/core/docker-completion/manifests/28.2.2
+Already downloaded: /Users/cameroncooke/Library/Caches/Homebrew/downloads/336b4a1e13f7e59c63b08ba371e15d892b27c68a5e4a8fe106c183a767a2855a--docker-completion-28.2.2.bottle_manifest.json
+==> Pouring docker-completion--28.2.2.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/docker-completion/28.2.2: 10 files, 342.8KB
+==> Installing docker
+==> Pouring docker--28.2.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/docker/28.2.2: 13 files, 26.9MB
+==> Running `brew cleanup docker`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Installing docker-compose
+Installing docker-compose formula. It is not currently installed.
+Warning: You are using macOS 26.
+We do not provide support for this pre-release version.
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/docker-compose/manifests/2.37.0
+==> Fetching docker-compose
+==> Downloading https://ghcr.io/v2/homebrew/core/docker-compose/blobs/sha256:3a1ea5c53c35773db0f896651a7ad55eead4571d1ca99b3b5321ebbcd94f3191
+==> Pouring docker-compose--2.37.0.arm64_sequoia.bottle.tar.gz
+==> Caveats
+Compose is a Docker plugin. For Docker to find the plugin, add "cliPluginsExtraDirs" to ~/.docker/config.json:
+  "cliPluginsExtraDirs": [
+      "/opt/homebrew/lib/docker/cli-plugins"
+  ]
+==> Summary
+🍺  /opt/homebrew/Cellar/docker-compose/2.37.0: 8 files, 60.3MB
+==> Running `brew cleanup docker-compose`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Installing kubectl
+Installing kubectl formula. It is not currently installed.
+Warning: You are using macOS 26.
+We do not provide support for this pre-release version.
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/kubernetes-cli/manifests/1.33.1
+==> Fetching kubernetes-cli
+==> Downloading https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:dfe3b28b44ac119c76b7d68396eea2dc5715208317ba8d70024a292908a66795
+==> Pouring kubernetes-cli--1.33.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/kubernetes-cli/1.33.1: 255 files, 62.2MB
+==> Running `brew cleanup kubernetes-cli`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+Installing helm
+Installing helm formula. It is not currently installed.
+Warning: You are using macOS 26.
+We do not provide support for this pre-release version.
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/helm/manifests/3.18.2
+==> Fetching helm
+==> Downloading https://ghcr.io/v2/homebrew/core/helm/blobs/sha256:2839421ff115477637eb88afa346ba7108229013954aaed80d4a259bd28d7462
+==> Pouring helm--3.18.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/helm/3.18.2: 66 files, 56.5MB
+==> Running `brew cleanup helm`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+Skipping install of ack formula. It is already installed.
+Using ack
+Skipping install of roundup formula. It is already installed.
+Using roundup
+Skipping install of spaceman-diff formula. It is already installed.
+Using spaceman-diff
+Skipping install of spark formula. It is already installed.
+Using spark
+Skipping install of nano formula. It is already installed.
+Using nano
+Skipping install of watchman formula. It is already installed.
+Using watchman
+Skipping install of graphviz formula. It is already installed.
+Using graphviz
+Skipping install of perl formula. It is already installed.
+Using perl
+Skipping install of font-meslo-lg-nerd-font cask. It is already installed.
+Using font-meslo-lg-nerd-font
+`brew bundle` complete! 67 Brewfile dependencies now installed.
+› Running individual installers...
+  Running ./iterm/install.sh...
+{
+    "Default Bookmark Guid" = "81035E9C-7683-4AA8-86D9-EA8A98447AF4";
+    HapticFeedbackForEsc = 0;
+    HideTab = 1;
+    HotkeyMigratedFromSingleToMulti = 1;
+    IRMemory = 4;
+    "New Bookmarks" =     (
+                {
+            "ASCII Anti Aliased" = 1;
+            "Ambiguous Double Width" = 0;
+            "Ansi 0 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 1 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.7333333492279053";
+            };
+            "Ansi 10 Color" =             {
+                "Blue Component" = "0.3333333432674408";
+                "Green Component" = 1;
+                "Red Component" = "0.3333333432674408";
+            };
+            "Ansi 11 Color" =             {
+                "Blue Component" = "0.3333333432674408";
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Ansi 12 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = "0.3333333432674408";
+                "Red Component" = "0.3333333432674408";
+            };
+            "Ansi 13 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = "0.3333333432674408";
+                "Red Component" = 1;
+            };
+            "Ansi 14 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = "0.3333333432674408";
+            };
+            "Ansi 15 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Ansi 2 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = 0;
+            };
+            "Ansi 3 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = "0.7333333492279053";
+            };
+            "Ansi 4 Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 5 Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = 0;
+                "Red Component" = "0.7333333492279053";
+            };
+            "Ansi 6 Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = 0;
+            };
+            "Ansi 7 Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = "0.7333333492279053";
+            };
+            "Ansi 8 Color" =             {
+                "Blue Component" = "0.3333333432674408";
+                "Green Component" = "0.3333333432674408";
+                "Red Component" = "0.3333333432674408";
+            };
+            "Ansi 9 Color" =             {
+                "Blue Component" = "0.3333333432674408";
+                "Green Component" = "0.3333333432674408";
+                "Red Component" = 1;
+            };
+            "BM Growl" = 1;
+            "Background Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Background Image Location" = "";
+            "Blinking Cursor" = 0;
+            Blur = 0;
+            "Bold Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Character Encoding" = 4;
+            "Close Sessions On End" = 1;
+            Columns = 80;
+            Command = "";
+            "Cursor Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = "0.7333333492279053";
+            };
+            "Cursor Text Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Custom Command" = No;
+            "Custom Directory" = No;
+            "Default Bookmark" = No;
+            Description = Default;
+            "Disable Window Resizing" = 1;
+            "Flashing Bell" = 0;
+            "Foreground Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = "0.7333333492279053";
+            };
+            Guid = "BFDCABC4-4DBC-4D6A-B5C8-F5CF96C5B99C";
+            "Horizontal Spacing" = 1;
+            "Idle Code" = 0;
+            "Jobs to Ignore" =             (
+                rlogin,
+                ssh,
+                slogin,
+                telnet
+            );
+            "Keyboard Map" =             {
+                "0x2d-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x32-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x00;
+                };
+                "0x33-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1b;
+                };
+                "0x34-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1c;
+                };
+                "0x35-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1d;
+                };
+                "0x36-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1e;
+                };
+                "0x37-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x38-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x7f;
+                };
+                "0xf700-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2A";
+                };
+                "0xf700-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5A";
+                };
+                "0xf700-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6A";
+                };
+                "0xf700-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x41";
+                };
+                "0xf701-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2B";
+                };
+                "0xf701-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5B";
+                };
+                "0xf701-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6B";
+                };
+                "0xf701-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x42";
+                };
+                "0xf702-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2D";
+                };
+                "0xf702-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5D";
+                };
+                "0xf702-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6D";
+                };
+                "0xf702-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x44";
+                };
+                "0xf703-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2C";
+                };
+                "0xf703-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5C";
+                };
+                "0xf703-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6C";
+                };
+                "0xf703-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x43";
+                };
+                "0xf704-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2P";
+                };
+                "0xf705-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2Q";
+                };
+                "0xf706-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2R";
+                };
+                "0xf707-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2S";
+                };
+                "0xf708-0x20000" =                 {
+                    Action = 10;
+                    Text = "[15;2~";
+                };
+                "0xf709-0x20000" =                 {
+                    Action = 10;
+                    Text = "[17;2~";
+                };
+                "0xf70a-0x20000" =                 {
+                    Action = 10;
+                    Text = "[18;2~";
+                };
+                "0xf70b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[19;2~";
+                };
+                "0xf70c-0x20000" =                 {
+                    Action = 10;
+                    Text = "[20;2~";
+                };
+                "0xf70d-0x20000" =                 {
+                    Action = 10;
+                    Text = "[21;2~";
+                };
+                "0xf70e-0x20000" =                 {
+                    Action = 10;
+                    Text = "[23;2~";
+                };
+                "0xf70f-0x20000" =                 {
+                    Action = 10;
+                    Text = "[24;2~";
+                };
+                "0xf729-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2H";
+                };
+                "0xf729-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5H";
+                };
+                "0xf72b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2F";
+                };
+                "0xf72b-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5F";
+                };
+            };
+            "Mouse Reporting" = 1;
+            Name = Default;
+            "Non Ascii Font" = "Monaco 12";
+            "Non-ASCII Anti Aliased" = 1;
+            "Normal Font" = "MesloLGMDZForPowerline-Regular 12";
+            "Option Key Sends" = 0;
+            "Prompt Before Closing 2" = 0;
+            "Right Option Key Sends" = 0;
+            Rows = 25;
+            Screen = "-1";
+            "Scrollback Lines" = 1000;
+            "Selected Text Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Selection Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = "0.8353000283241272";
+                "Red Component" = "0.7098000049591064";
+            };
+            "Send Code When Idle" = 0;
+            Shortcut = "";
+            "Silence Bell" = 0;
+            "Sync Title" = 0;
+            Tags =             (
+            );
+            "Terminal Type" = "xterm-256color";
+            Transparency = 0;
+            "Unlimited Scrollback" = 0;
+            "Use Bold Font" = 1;
+            "Use Bright Bold" = 1;
+            "Use Italic Font" = 1;
+            "Use Non-ASCII Font" = 0;
+            "Vertical Spacing" = 1;
+            "Visual Bell" = 1;
+            "Window Type" = 0;
+            "Working Directory" = "/Users/cameron";
+        },
+                {
+            "ASCII Anti Aliased" = 1;
+            "Ambiguous Double Width" = 0;
+            "Ansi 0 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 1 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.8";
+            };
+            "Ansi 10 Color" =             {
+                "Blue Component" = "0.2039216";
+                "Green Component" = "0.8862745";
+                "Red Component" = "0.5411764999999999";
+            };
+            "Ansi 11 Color" =             {
+                "Blue Component" = "0.3098039";
+                "Green Component" = "0.9137255";
+                "Red Component" = "0.9882353";
+            };
+            "Ansi 12 Color" =             {
+                "Blue Component" = "0.8117647";
+                "Green Component" = "0.6235294";
+                "Red Component" = "0.4470588";
+            };
+            "Ansi 13 Color" =             {
+                "Blue Component" = "0.6588235";
+                "Green Component" = "0.4980392";
+                "Red Component" = "0.6784314";
+            };
+            "Ansi 14 Color" =             {
+                "Blue Component" = "0.8862745";
+                "Green Component" = "0.8862745";
+                "Red Component" = "0.2039216";
+            };
+            "Ansi 15 Color" =             {
+                "Blue Component" = "0.9254902";
+                "Green Component" = "0.9333333";
+                "Red Component" = "0.9333333";
+            };
+            "Ansi 2 Color" =             {
+                "Blue Component" = "0.02352941";
+                "Green Component" = "0.6039215999999999";
+                "Red Component" = "0.3058824";
+            };
+            "Ansi 3 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.627451";
+                "Red Component" = "0.7686275";
+            };
+            "Ansi 4 Color" =             {
+                "Blue Component" = "0.6431373";
+                "Green Component" = "0.3960784";
+                "Red Component" = "0.2039216";
+            };
+            "Ansi 5 Color" =             {
+                "Blue Component" = "0.4823529";
+                "Green Component" = "0.3137255";
+                "Red Component" = "0.4588235";
+            };
+            "Ansi 6 Color" =             {
+                "Blue Component" = "0.6039215999999999";
+                "Green Component" = "0.5960785";
+                "Red Component" = "0.02352941";
+            };
+            "Ansi 7 Color" =             {
+                "Blue Component" = "0.8117647";
+                "Green Component" = "0.8431373";
+                "Red Component" = "0.827451";
+            };
+            "Ansi 8 Color" =             {
+                "Blue Component" = "0.3254902";
+                "Green Component" = "0.3411765";
+                "Red Component" = "0.3333333";
+            };
+            "Ansi 9 Color" =             {
+                "Blue Component" = "0.1607843";
+                "Green Component" = "0.1607843";
+                "Red Component" = "0.9372549";
+            };
+            "BM Growl" = 1;
+            "Background Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Background Image Location" = "";
+            "Badge Color" =             {
+                "Alpha Component" = "0.5";
+                "Blue Component" = 0;
+                "Color Space" = Calibrated;
+                "Green Component" = 0;
+                "Red Component" = 1;
+            };
+            "Blinking Cursor" = 1;
+            Blur = 1;
+            "Blur Radius" = "24.47061298076924";
+            "Bold Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Bound Hosts" =             (
+            );
+            "Character Encoding" = 4;
+            "Close Sessions On End" = 1;
+            Columns = 120;
+            Command = "";
+            "Cursor Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Cursor Guide Color" =             {
+                "Alpha Component" = "0.25";
+                "Blue Component" = 1;
+                "Color Space" = Calibrated;
+                "Green Component" = "0.91";
+                "Red Component" = "0.65";
+            };
+            "Cursor Text Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Cursor Type" = 0;
+            "Custom Command" = No;
+            "Custom Directory" = No;
+            "Default Bookmark" = No;
+            Description = Default;
+            "Disable Window Resizing" = 1;
+            "Flashing Bell" = 0;
+            "Foreground Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            Guid = "81035E9C-7683-4AA8-86D9-EA8A98447AF4";
+            "Horizontal Spacing" = 1;
+            "Idle Code" = 0;
+            "Jobs to Ignore" =             (
+                rlogin,
+                ssh,
+                slogin,
+                telnet
+            );
+            "Keyboard Map" =             {
+                "0x2d-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x32-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x00;
+                };
+                "0x33-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1b;
+                };
+                "0x34-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1c;
+                };
+                "0x35-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1d;
+                };
+                "0x36-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1e;
+                };
+                "0x37-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x38-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x7f;
+                };
+                "0xf700-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2A";
+                };
+                "0xf700-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5A";
+                };
+                "0xf700-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6A";
+                };
+                "0xf700-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x41";
+                };
+                "0xf701-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2B";
+                };
+                "0xf701-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5B";
+                };
+                "0xf701-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6B";
+                };
+                "0xf701-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x42";
+                };
+                "0xf702-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2D";
+                };
+                "0xf702-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5D";
+                };
+                "0xf702-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6D";
+                };
+                "0xf702-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x44";
+                };
+                "0xf702-0x300000" =                 {
+                    Action = 10;
+                    Text = b;
+                };
+                "0xf703-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2C";
+                };
+                "0xf703-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5C";
+                };
+                "0xf703-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6C";
+                };
+                "0xf703-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x43";
+                };
+                "0xf703-0x300000" =                 {
+                    Action = 10;
+                    Text = f;
+                };
+                "0xf704-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2P";
+                };
+                "0xf705-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2Q";
+                };
+                "0xf706-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2R";
+                };
+                "0xf707-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2S";
+                };
+                "0xf708-0x20000" =                 {
+                    Action = 10;
+                    Text = "[15;2~";
+                };
+                "0xf709-0x20000" =                 {
+                    Action = 10;
+                    Text = "[17;2~";
+                };
+                "0xf70a-0x20000" =                 {
+                    Action = 10;
+                    Text = "[18;2~";
+                };
+                "0xf70b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[19;2~";
+                };
+                "0xf70c-0x20000" =                 {
+                    Action = 10;
+                    Text = "[20;2~";
+                };
+                "0xf70d-0x20000" =                 {
+                    Action = 10;
+                    Text = "[21;2~";
+                };
+                "0xf70e-0x20000" =                 {
+                    Action = 10;
+                    Text = "[23;2~";
+                };
+                "0xf70f-0x20000" =                 {
+                    Action = 10;
+                    Text = "[24;2~";
+                };
+                "0xf729-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2H";
+                };
+                "0xf729-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5H";
+                };
+                "0xf72b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2F";
+                };
+                "0xf72b-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5F";
+                };
+            };
+            "Link Color" =             {
+                "Alpha Component" = 1;
+                "Blue Component" = "0.678";
+                "Color Space" = Calibrated;
+                "Green Component" = "0.27";
+                "Red Component" = "0.023";
+            };
+            "Mouse Reporting" = 1;
+            Name = Cameron;
+            "Non Ascii Font" = "Monaco 12";
+            "Non-ASCII Anti Aliased" = 1;
+            "Normal Font" = "MesloLGMDZForPowerline-Regular 14";
+            "Only The Default BG Color Uses Transparency" = 1;
+            "Option Key Sends" = 0;
+            "Prompt Before Closing 2" = 0;
+            "Right Option Key Sends" = 0;
+            Rows = 35;
+            Screen = "-1";
+            "Scrollback Lines" = 0;
+            "Selected Text Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Selection Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = "0.8353";
+                "Red Component" = "0.7098";
+            };
+            "Send Code When Idle" = 0;
+            Shortcut = "";
+            "Show Mark Indicators" = 0;
+            "Silence Bell" = 0;
+            "Sync Title" = 0;
+            Tags =             (
+            );
+            "Terminal Type" = "xterm-256color";
+            Transparency = "0.1512743036261377";
+            "Unlimited Scrollback" = 1;
+            "Use Bold Font" = 1;
+            "Use Bright Bold" = 1;
+            "Use Italic Font" = 1;
+            "Use Non-ASCII Font" = 0;
+            "Vertical Spacing" = 1;
+            "Visual Bell" = 1;
+            "Window Type" = 0;
+            "Working Directory" = "/Users/cameron";
+        }
+    );
+    OnlyWhenMoreTabs = 0;
+    OpenArrangementAtStartup = 0;
+    OpenBookmark = 0;
+    OpenNoWindowsAtStartup = 0;
+    PasteTabToStringTabStopSize = 4;
+    PointerActions =     {
+        "Button,1,1,," =         {
+            Action = kContextMenuPointerAction;
+        };
+        "Button,2,1,," =         {
+            Action = kPasteFromSelectionPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeDown,," =         {
+            Action = kPrevWindowPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeLeft,," =         {
+            Action = kPrevTabPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeRight,," =         {
+            Action = kNextTabPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeUp,," =         {
+            Action = kNextWindowPointerAction;
+        };
+    };
+    PromptOnQuit = 0;
+    RunJobsInServers = 0;
+    ShowNewOutputIndicator = 1;
+    SoundForEsc = 0;
+    SplitPaneDimmingAmount = "0.4154310726950355";
+    TabStyle = 1;
+    TabStyleWithAutomaticOption = 5;
+    VisualIndicatorForEsc = 0;
+    WordCharacters = "/-+\\\\~_.";
+    "findIgnoreCase_iTerm" = 1;
+    "findMode_iTerm" = 0;
+    "findRegex_iTerm" = 0;
+    kCPKSelectionViewPreferredModeKey = 0;
+    kCPKSelectionViewShowHSBTextFieldsKey = 0;
+}
+  Running ./config/install.sh...
+  Running ./nvm/install.sh...
+  Installing/updating NVM...
+  Installing NVM...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 16631  100 16631    0     0   138k      0 --:--:-- --:--:-- --:--:--  138k
+=> Downloading nvm from git to '/Users/cameroncooke/.nvm'
+=> Cloning into '/Users/cameroncooke/.nvm'...
+* (HEAD detached at FETCH_HEAD)
+  master
+=> Compressing and cleaning up git repository
+
+=> nvm source string already in /Users/cameroncooke/.zshrc
+=> bash_completion source string already in /Users/cameroncooke/.zshrc
+=> You currently have modules installed globally with `npm`. These will no
+=> longer be linked to the active version of Node when you install a new node
+=> with `nvm`; and they may (depending on how you construct your `$PATH`)
+=> override the binaries of modules installed with `nvm`:
+
+/opt/homebrew/lib
+├── corepack@0.33.0
+=> If you wish to uninstall them at a later point (or re-install them under your
+=> `nvm` node installs), you can remove them from the system Node as follows:
+
+     $ nvm use system
+     $ npm uninstall -g a_module
+
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  Installing latest LTS Node.js...
+Installing latest LTS version.
+Downloading and installing node v22.16.0...
+Downloading https://nodejs.org/dist/v22.16.0/node-v22.16.0-darwin-arm64.tar.xz...
+##                                                                         2.8%##############                                                            20.7%#######################                                                   32.0%########################################                                  55.8%########################################################                  78.6%######################################################################## 100.0%
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v22.16.0 (npm v10.9.2)
+Creating default alias: [0;32mdefault[0m [0;90m->[0m [1;33mlts/*[0m ([0;90m->[0m [0;32mv22.16.0[0m)
+Now using node v22.16.0 (npm v10.9.2)
+  NVM installation completed
+  Running ./amazonq/install.sh...
+  Checking Amazon Q installation...
+  Amazon Q Desktop is already installed
+  Amazon Q shell integration not found
+  After installing Amazon Q Desktop, open it and enable shell integration
+  Running ./devtools/install.sh...
+  Setting up additional developer tools...
+./devtools/install.sh: line 38: syntax error: unexpected end of file
+  Warning: ./devtools/install.sh failed
+  Running ./zsh/install.sh...
+fatal: destination path '/Users/cameroncooke/.oh-my-zsh/custom/themes/powerlevel10k' already exists and is not an empty directory.
+fatal: destination path '/Users/cameroncooke/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting' already exists and is not an empty directory.
+fatal: destination path '/Users/cameroncooke/.oh-my-zsh/custom/plugins/zsh-autosuggestions' already exists and is not an empty directory.
+  Running ./fonts/install.sh...
+  Installing Powerlevel10k fonts...
+  Downloading MesloLGS NF fonts...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2533k  100 2533k    0     0  15.5M      0 --:--:-- --:--:-- --:--:-- 15.5M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2542k  100 2542k    0     0  15.0M      0 --:--:-- --:--:-- --:--:-- 15.0M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2493k  100 2493k    0     0  15.1M      0 --:--:-- --:--:-- --:--:-- 15.1M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2501k  100 2501k    0     0  15.2M      0 --:--:-- --:--:-- --:--:-- 15.2M
+  Fonts installed to /Users/cameroncooke/Library/Fonts
+  NOTE: You'll need to configure iTerm2 to use 'MesloLGS NF' font
+        Go to iTerm2 → Preferences → Profiles → Text → Font
+/Users/cameroncooke/.dotfiles
+  Powerlevel10k fonts installed successfully
+[2K  [ [00;32mOK[0m ] dependencies installed
+  [ [00;34m..[0m ] running component installers
+   Running amazonq installer...
+  Checking Amazon Q installation...
+  Amazon Q Desktop is already installed
+  Amazon Q shell integration not found
+  After installing Amazon Q Desktop, open it and enable shell integration
+   ✓ amazonq completed
+   Running config installer...
+   ✓ config completed
+   Running devtools installer...
+  Setting up additional developer tools...
+/Users/cameroncooke/.dotfiles/devtools/install.sh: line 38: syntax error: unexpected end of file
+   ⚠ devtools had issues
+   Running fonts installer...
+  Installing Powerlevel10k fonts...
+  Downloading MesloLGS NF fonts...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2533k  100 2533k    0     0  14.6M      0 --:--:-- --:--:-- --:--:-- 24.4M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2542k  100 2542k    0     0  14.5M      0 --:--:-- --:--:-- --:--:-- 14.5M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2493k  100 2493k    0     0  14.7M      0 --:--:-- --:--:-- --:--:-- 14.7M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2501k  100 2501k    0     0  14.3M      0 --:--:-- --:--:-- --:--:-- 14.3M
+  Fonts installed to /Users/cameroncooke/Library/Fonts
+  NOTE: You'll need to configure iTerm2 to use 'MesloLGS NF' font
+        Go to iTerm2 → Preferences → Profiles → Text → Font
+/Users/cameroncooke/.dotfiles
+  Powerlevel10k fonts installed successfully
+   ✓ fonts completed
+   Running iterm installer...
+{
+    "Default Bookmark Guid" = "81035E9C-7683-4AA8-86D9-EA8A98447AF4";
+    HapticFeedbackForEsc = 0;
+    HideTab = 1;
+    HotkeyMigratedFromSingleToMulti = 1;
+    IRMemory = 4;
+    "New Bookmarks" =     (
+                {
+            "ASCII Anti Aliased" = 1;
+            "Ambiguous Double Width" = 0;
+            "Ansi 0 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 1 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.7333333492279053";
+            };
+            "Ansi 10 Color" =             {
+                "Blue Component" = "0.3333333432674408";
+                "Green Component" = 1;
+                "Red Component" = "0.3333333432674408";
+            };
+            "Ansi 11 Color" =             {
+                "Blue Component" = "0.3333333432674408";
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Ansi 12 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = "0.3333333432674408";
+                "Red Component" = "0.3333333432674408";
+            };
+            "Ansi 13 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = "0.3333333432674408";
+                "Red Component" = 1;
+            };
+            "Ansi 14 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = "0.3333333432674408";
+            };
+            "Ansi 15 Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Ansi 2 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = 0;
+            };
+            "Ansi 3 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = "0.7333333492279053";
+            };
+            "Ansi 4 Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 5 Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = 0;
+                "Red Component" = "0.7333333492279053";
+            };
+            "Ansi 6 Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = 0;
+            };
+            "Ansi 7 Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = "0.7333333492279053";
+            };
+            "Ansi 8 Color" =             {
+                "Blue Component" = "0.3333333432674408";
+                "Green Component" = "0.3333333432674408";
+                "Red Component" = "0.3333333432674408";
+            };
+            "Ansi 9 Color" =             {
+                "Blue Component" = "0.3333333432674408";
+                "Green Component" = "0.3333333432674408";
+                "Red Component" = 1;
+            };
+            "BM Growl" = 1;
+            "Background Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Background Image Location" = "";
+            "Blinking Cursor" = 0;
+            Blur = 0;
+            "Bold Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Character Encoding" = 4;
+            "Close Sessions On End" = 1;
+            Columns = 80;
+            Command = "";
+            "Cursor Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = "0.7333333492279053";
+            };
+            "Cursor Text Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Custom Command" = No;
+            "Custom Directory" = No;
+            "Default Bookmark" = No;
+            Description = Default;
+            "Disable Window Resizing" = 1;
+            "Flashing Bell" = 0;
+            "Foreground Color" =             {
+                "Blue Component" = "0.7333333492279053";
+                "Green Component" = "0.7333333492279053";
+                "Red Component" = "0.7333333492279053";
+            };
+            Guid = "BFDCABC4-4DBC-4D6A-B5C8-F5CF96C5B99C";
+            "Horizontal Spacing" = 1;
+            "Idle Code" = 0;
+            "Jobs to Ignore" =             (
+                rlogin,
+                ssh,
+                slogin,
+                telnet
+            );
+            "Keyboard Map" =             {
+                "0x2d-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x32-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x00;
+                };
+                "0x33-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1b;
+                };
+                "0x34-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1c;
+                };
+                "0x35-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1d;
+                };
+                "0x36-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1e;
+                };
+                "0x37-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x38-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x7f;
+                };
+                "0xf700-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2A";
+                };
+                "0xf700-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5A";
+                };
+                "0xf700-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6A";
+                };
+                "0xf700-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x41";
+                };
+                "0xf701-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2B";
+                };
+                "0xf701-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5B";
+                };
+                "0xf701-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6B";
+                };
+                "0xf701-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x42";
+                };
+                "0xf702-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2D";
+                };
+                "0xf702-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5D";
+                };
+                "0xf702-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6D";
+                };
+                "0xf702-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x44";
+                };
+                "0xf703-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2C";
+                };
+                "0xf703-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5C";
+                };
+                "0xf703-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6C";
+                };
+                "0xf703-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x43";
+                };
+                "0xf704-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2P";
+                };
+                "0xf705-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2Q";
+                };
+                "0xf706-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2R";
+                };
+                "0xf707-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2S";
+                };
+                "0xf708-0x20000" =                 {
+                    Action = 10;
+                    Text = "[15;2~";
+                };
+                "0xf709-0x20000" =                 {
+                    Action = 10;
+                    Text = "[17;2~";
+                };
+                "0xf70a-0x20000" =                 {
+                    Action = 10;
+                    Text = "[18;2~";
+                };
+                "0xf70b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[19;2~";
+                };
+                "0xf70c-0x20000" =                 {
+                    Action = 10;
+                    Text = "[20;2~";
+                };
+                "0xf70d-0x20000" =                 {
+                    Action = 10;
+                    Text = "[21;2~";
+                };
+                "0xf70e-0x20000" =                 {
+                    Action = 10;
+                    Text = "[23;2~";
+                };
+                "0xf70f-0x20000" =                 {
+                    Action = 10;
+                    Text = "[24;2~";
+                };
+                "0xf729-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2H";
+                };
+                "0xf729-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5H";
+                };
+                "0xf72b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2F";
+                };
+                "0xf72b-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5F";
+                };
+            };
+            "Mouse Reporting" = 1;
+            Name = Default;
+            "Non Ascii Font" = "Monaco 12";
+            "Non-ASCII Anti Aliased" = 1;
+            "Normal Font" = "MesloLGMDZForPowerline-Regular 12";
+            "Option Key Sends" = 0;
+            "Prompt Before Closing 2" = 0;
+            "Right Option Key Sends" = 0;
+            Rows = 25;
+            Screen = "-1";
+            "Scrollback Lines" = 1000;
+            "Selected Text Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Selection Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = "0.8353000283241272";
+                "Red Component" = "0.7098000049591064";
+            };
+            "Send Code When Idle" = 0;
+            Shortcut = "";
+            "Silence Bell" = 0;
+            "Sync Title" = 0;
+            Tags =             (
+            );
+            "Terminal Type" = "xterm-256color";
+            Transparency = 0;
+            "Unlimited Scrollback" = 0;
+            "Use Bold Font" = 1;
+            "Use Bright Bold" = 1;
+            "Use Italic Font" = 1;
+            "Use Non-ASCII Font" = 0;
+            "Vertical Spacing" = 1;
+            "Visual Bell" = 1;
+            "Window Type" = 0;
+            "Working Directory" = "/Users/cameron";
+        },
+                {
+            "ASCII Anti Aliased" = 1;
+            "Ambiguous Double Width" = 0;
+            "Ansi 0 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Ansi 1 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = "0.8";
+            };
+            "Ansi 10 Color" =             {
+                "Blue Component" = "0.2039216";
+                "Green Component" = "0.8862745";
+                "Red Component" = "0.5411764999999999";
+            };
+            "Ansi 11 Color" =             {
+                "Blue Component" = "0.3098039";
+                "Green Component" = "0.9137255";
+                "Red Component" = "0.9882353";
+            };
+            "Ansi 12 Color" =             {
+                "Blue Component" = "0.8117647";
+                "Green Component" = "0.6235294";
+                "Red Component" = "0.4470588";
+            };
+            "Ansi 13 Color" =             {
+                "Blue Component" = "0.6588235";
+                "Green Component" = "0.4980392";
+                "Red Component" = "0.6784314";
+            };
+            "Ansi 14 Color" =             {
+                "Blue Component" = "0.8862745";
+                "Green Component" = "0.8862745";
+                "Red Component" = "0.2039216";
+            };
+            "Ansi 15 Color" =             {
+                "Blue Component" = "0.9254902";
+                "Green Component" = "0.9333333";
+                "Red Component" = "0.9333333";
+            };
+            "Ansi 2 Color" =             {
+                "Blue Component" = "0.02352941";
+                "Green Component" = "0.6039215999999999";
+                "Red Component" = "0.3058824";
+            };
+            "Ansi 3 Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = "0.627451";
+                "Red Component" = "0.7686275";
+            };
+            "Ansi 4 Color" =             {
+                "Blue Component" = "0.6431373";
+                "Green Component" = "0.3960784";
+                "Red Component" = "0.2039216";
+            };
+            "Ansi 5 Color" =             {
+                "Blue Component" = "0.4823529";
+                "Green Component" = "0.3137255";
+                "Red Component" = "0.4588235";
+            };
+            "Ansi 6 Color" =             {
+                "Blue Component" = "0.6039215999999999";
+                "Green Component" = "0.5960785";
+                "Red Component" = "0.02352941";
+            };
+            "Ansi 7 Color" =             {
+                "Blue Component" = "0.8117647";
+                "Green Component" = "0.8431373";
+                "Red Component" = "0.827451";
+            };
+            "Ansi 8 Color" =             {
+                "Blue Component" = "0.3254902";
+                "Green Component" = "0.3411765";
+                "Red Component" = "0.3333333";
+            };
+            "Ansi 9 Color" =             {
+                "Blue Component" = "0.1607843";
+                "Green Component" = "0.1607843";
+                "Red Component" = "0.9372549";
+            };
+            "BM Growl" = 1;
+            "Background Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Background Image Location" = "";
+            "Badge Color" =             {
+                "Alpha Component" = "0.5";
+                "Blue Component" = 0;
+                "Color Space" = Calibrated;
+                "Green Component" = 0;
+                "Red Component" = 1;
+            };
+            "Blinking Cursor" = 1;
+            Blur = 1;
+            "Blur Radius" = "24.47061298076924";
+            "Bold Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Bound Hosts" =             (
+            );
+            "Character Encoding" = 4;
+            "Close Sessions On End" = 1;
+            Columns = 120;
+            Command = "";
+            "Cursor Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            "Cursor Guide Color" =             {
+                "Alpha Component" = "0.25";
+                "Blue Component" = 1;
+                "Color Space" = Calibrated;
+                "Green Component" = "0.91";
+                "Red Component" = "0.65";
+            };
+            "Cursor Text Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Cursor Type" = 0;
+            "Custom Command" = No;
+            "Custom Directory" = No;
+            "Default Bookmark" = No;
+            Description = Default;
+            "Disable Window Resizing" = 1;
+            "Flashing Bell" = 0;
+            "Foreground Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = 1;
+                "Red Component" = 1;
+            };
+            Guid = "81035E9C-7683-4AA8-86D9-EA8A98447AF4";
+            "Horizontal Spacing" = 1;
+            "Idle Code" = 0;
+            "Jobs to Ignore" =             (
+                rlogin,
+                ssh,
+                slogin,
+                telnet
+            );
+            "Keyboard Map" =             {
+                "0x2d-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x32-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x00;
+                };
+                "0x33-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1b;
+                };
+                "0x34-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1c;
+                };
+                "0x35-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1d;
+                };
+                "0x36-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1e;
+                };
+                "0x37-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x1f;
+                };
+                "0x38-0x40000" =                 {
+                    Action = 11;
+                    Text = 0x7f;
+                };
+                "0xf700-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2A";
+                };
+                "0xf700-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5A";
+                };
+                "0xf700-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6A";
+                };
+                "0xf700-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x41";
+                };
+                "0xf701-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2B";
+                };
+                "0xf701-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5B";
+                };
+                "0xf701-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6B";
+                };
+                "0xf701-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x42";
+                };
+                "0xf702-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2D";
+                };
+                "0xf702-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5D";
+                };
+                "0xf702-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6D";
+                };
+                "0xf702-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x44";
+                };
+                "0xf702-0x300000" =                 {
+                    Action = 10;
+                    Text = b;
+                };
+                "0xf703-0x220000" =                 {
+                    Action = 10;
+                    Text = "[1;2C";
+                };
+                "0xf703-0x240000" =                 {
+                    Action = 10;
+                    Text = "[1;5C";
+                };
+                "0xf703-0x260000" =                 {
+                    Action = 10;
+                    Text = "[1;6C";
+                };
+                "0xf703-0x280000" =                 {
+                    Action = 11;
+                    Text = "0x1b 0x1b 0x5b 0x43";
+                };
+                "0xf703-0x300000" =                 {
+                    Action = 10;
+                    Text = f;
+                };
+                "0xf704-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2P";
+                };
+                "0xf705-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2Q";
+                };
+                "0xf706-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2R";
+                };
+                "0xf707-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2S";
+                };
+                "0xf708-0x20000" =                 {
+                    Action = 10;
+                    Text = "[15;2~";
+                };
+                "0xf709-0x20000" =                 {
+                    Action = 10;
+                    Text = "[17;2~";
+                };
+                "0xf70a-0x20000" =                 {
+                    Action = 10;
+                    Text = "[18;2~";
+                };
+                "0xf70b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[19;2~";
+                };
+                "0xf70c-0x20000" =                 {
+                    Action = 10;
+                    Text = "[20;2~";
+                };
+                "0xf70d-0x20000" =                 {
+                    Action = 10;
+                    Text = "[21;2~";
+                };
+                "0xf70e-0x20000" =                 {
+                    Action = 10;
+                    Text = "[23;2~";
+                };
+                "0xf70f-0x20000" =                 {
+                    Action = 10;
+                    Text = "[24;2~";
+                };
+                "0xf729-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2H";
+                };
+                "0xf729-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5H";
+                };
+                "0xf72b-0x20000" =                 {
+                    Action = 10;
+                    Text = "[1;2F";
+                };
+                "0xf72b-0x40000" =                 {
+                    Action = 10;
+                    Text = "[1;5F";
+                };
+            };
+            "Link Color" =             {
+                "Alpha Component" = 1;
+                "Blue Component" = "0.678";
+                "Color Space" = Calibrated;
+                "Green Component" = "0.27";
+                "Red Component" = "0.023";
+            };
+            "Mouse Reporting" = 1;
+            Name = Cameron;
+            "Non Ascii Font" = "Monaco 12";
+            "Non-ASCII Anti Aliased" = 1;
+            "Normal Font" = "MesloLGMDZForPowerline-Regular 14";
+            "Only The Default BG Color Uses Transparency" = 1;
+            "Option Key Sends" = 0;
+            "Prompt Before Closing 2" = 0;
+            "Right Option Key Sends" = 0;
+            Rows = 35;
+            Screen = "-1";
+            "Scrollback Lines" = 0;
+            "Selected Text Color" =             {
+                "Blue Component" = 0;
+                "Green Component" = 0;
+                "Red Component" = 0;
+            };
+            "Selection Color" =             {
+                "Blue Component" = 1;
+                "Green Component" = "0.8353";
+                "Red Component" = "0.7098";
+            };
+            "Send Code When Idle" = 0;
+            Shortcut = "";
+            "Show Mark Indicators" = 0;
+            "Silence Bell" = 0;
+            "Sync Title" = 0;
+            Tags =             (
+            );
+            "Terminal Type" = "xterm-256color";
+            Transparency = "0.1512743036261377";
+            "Unlimited Scrollback" = 1;
+            "Use Bold Font" = 1;
+            "Use Bright Bold" = 1;
+            "Use Italic Font" = 1;
+            "Use Non-ASCII Font" = 0;
+            "Vertical Spacing" = 1;
+            "Visual Bell" = 1;
+            "Window Type" = 0;
+            "Working Directory" = "/Users/cameron";
+        }
+    );
+    OnlyWhenMoreTabs = 0;
+    OpenArrangementAtStartup = 0;
+    OpenBookmark = 0;
+    OpenNoWindowsAtStartup = 0;
+    PasteTabToStringTabStopSize = 4;
+    PointerActions =     {
+        "Button,1,1,," =         {
+            Action = kContextMenuPointerAction;
+        };
+        "Button,2,1,," =         {
+            Action = kPasteFromSelectionPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeDown,," =         {
+            Action = kPrevWindowPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeLeft,," =         {
+            Action = kPrevTabPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeRight,," =         {
+            Action = kNextTabPointerAction;
+        };
+        "Gesture,ThreeFingerSwipeUp,," =         {
+            Action = kNextWindowPointerAction;
+        };
+    };
+    PromptOnQuit = 0;
+    RunJobsInServers = 0;
+    ShowNewOutputIndicator = 1;
+    SoundForEsc = 0;
+    SplitPaneDimmingAmount = "0.4154310726950355";
+    TabStyle = 1;
+    TabStyleWithAutomaticOption = 5;
+    VisualIndicatorForEsc = 0;
+    WordCharacters = "/-+\\\\~_.";
+    "findIgnoreCase_iTerm" = 1;
+    "findMode_iTerm" = 0;
+    "findRegex_iTerm" = 0;
+    kCPKSelectionViewPreferredModeKey = 0;
+    kCPKSelectionViewShowHSBTextFieldsKey = 0;
+}
+   ✓ iterm completed
+   Running nvm installer...
+  Installing/updating NVM...
+  NVM already installed at /Users/cameroncooke/.nvm
+From https://github.com/nvm-sh/nvm
+ * [new tag]         v0.0.1     -> v0.0.1
+ * [new tag]         v0.0.6     -> v0.0.6
+ * [new tag]         v0.1.0     -> v0.1.0
+ * [new tag]         v0.10.0    -> v0.10.0
+ * [new tag]         v0.11.0    -> v0.11.0
+ * [new tag]         v0.11.1    -> v0.11.1
+ * [new tag]         v0.11.2    -> v0.11.2
+ * [new tag]         v0.12.0    -> v0.12.0
+ * [new tag]         v0.12.1    -> v0.12.1
+ * [new tag]         v0.12.2    -> v0.12.2
+ * [new tag]         v0.13.0    -> v0.13.0
+ * [new tag]         v0.13.1    -> v0.13.1
+ * [new tag]         v0.14.0    -> v0.14.0
+ * [new tag]         v0.15.0    -> v0.15.0
+ * [new tag]         v0.16.0    -> v0.16.0
+ * [new tag]         v0.16.1    -> v0.16.1
+ * [new tag]         v0.17.0    -> v0.17.0
+ * [new tag]         v0.17.1    -> v0.17.1
+ * [new tag]         v0.17.2    -> v0.17.2
+ * [new tag]         v0.17.3    -> v0.17.3
+ * [new tag]         v0.18.0    -> v0.18.0
+ * [new tag]         v0.19.0    -> v0.19.0
+ * [new tag]         v0.2.0     -> v0.2.0
+ * [new tag]         v0.20.0    -> v0.20.0
+ * [new tag]         v0.21.0    -> v0.21.0
+ * [new tag]         v0.22.0    -> v0.22.0
+ * [new tag]         v0.22.1    -> v0.22.1
+ * [new tag]         v0.22.2    -> v0.22.2
+ * [new tag]         v0.23.0    -> v0.23.0
+ * [new tag]         v0.23.1    -> v0.23.1
+ * [new tag]         v0.23.2    -> v0.23.2
+ * [new tag]         v0.23.3    -> v0.23.3
+ * [new tag]         v0.24.0    -> v0.24.0
+ * [new tag]         v0.24.1    -> v0.24.1
+ * [new tag]         v0.24.2    -> v0.24.2
+ * [new tag]         v0.25.0    -> v0.25.0
+ * [new tag]         v0.25.1    -> v0.25.1
+ * [new tag]         v0.25.2    -> v0.25.2
+ * [new tag]         v0.25.3    -> v0.25.3
+ * [new tag]         v0.25.4    -> v0.25.4
+ * [new tag]         v0.26.0    -> v0.26.0
+ * [new tag]         v0.26.1    -> v0.26.1
+ * [new tag]         v0.27.0    -> v0.27.0
+ * [new tag]         v0.27.1    -> v0.27.1
+ * [new tag]         v0.28.0    -> v0.28.0
+ * [new tag]         v0.29.0    -> v0.29.0
+ * [new tag]         v0.3.0     -> v0.3.0
+ * [new tag]         v0.30.0    -> v0.30.0
+ * [new tag]         v0.30.1    -> v0.30.1
+ * [new tag]         v0.30.2    -> v0.30.2
+ * [new tag]         v0.31.0    -> v0.31.0
+ * [new tag]         v0.31.1    -> v0.31.1
+ * [new tag]         v0.31.2    -> v0.31.2
+ * [new tag]         v0.31.3    -> v0.31.3
+ * [new tag]         v0.31.4    -> v0.31.4
+ * [new tag]         v0.31.5    -> v0.31.5
+ * [new tag]         v0.31.6    -> v0.31.6
+ * [new tag]         v0.31.7    -> v0.31.7
+ * [new tag]         v0.32.0    -> v0.32.0
+ * [new tag]         v0.32.1    -> v0.32.1
+ * [new tag]         v0.33.0    -> v0.33.0
+ * [new tag]         v0.33.1    -> v0.33.1
+ * [new tag]         v0.33.10   -> v0.33.10
+ * [new tag]         v0.33.11   -> v0.33.11
+ * [new tag]         v0.33.2    -> v0.33.2
+ * [new tag]         v0.33.3    -> v0.33.3
+ * [new tag]         v0.33.4    -> v0.33.4
+ * [new tag]         v0.33.5    -> v0.33.5
+ * [new tag]         v0.33.6    -> v0.33.6
+ * [new tag]         v0.33.7    -> v0.33.7
+ * [new tag]         v0.33.8    -> v0.33.8
+ * [new tag]         v0.33.9    -> v0.33.9
+ * [new tag]         v0.34.0    -> v0.34.0
+ * [new tag]         v0.35.0    -> v0.35.0
+ * [new tag]         v0.35.1    -> v0.35.1
+ * [new tag]         v0.35.2    -> v0.35.2
+ * [new tag]         v0.35.3    -> v0.35.3
+ * [new tag]         v0.36.0    -> v0.36.0
+ * [new tag]         v0.37.0    -> v0.37.0
+ * [new tag]         v0.37.1    -> v0.37.1
+ * [new tag]         v0.37.2    -> v0.37.2
+ * [new tag]         v0.38.0    -> v0.38.0
+ * [new tag]         v0.39.0    -> v0.39.0
+ * [new tag]         v0.39.1    -> v0.39.1
+ * [new tag]         v0.39.2    -> v0.39.2
+ * [new tag]         v0.39.3    -> v0.39.3
+ * [new tag]         v0.39.4    -> v0.39.4
+ * [new tag]         v0.39.5    -> v0.39.5
+ * [new tag]         v0.39.6    -> v0.39.6
+ * [new tag]         v0.39.7    -> v0.39.7
+ * [new tag]         v0.4.0     -> v0.4.0
+ * [new tag]         v0.40.0    -> v0.40.0
+ * [new tag]         v0.40.1    -> v0.40.1
+ * [new tag]         v0.40.2    -> v0.40.2
+ * [new tag]         v0.5.0     -> v0.5.0
+ * [new tag]         v0.5.1     -> v0.5.1
+ * [new tag]         v0.6.0     -> v0.6.0
+ * [new tag]         v0.6.1     -> v0.6.1
+ * [new tag]         v0.7.0     -> v0.7.0
+ * [new tag]         v0.8.0     -> v0.8.0
+ * [new tag]         v0.9.0     -> v0.9.0
+HEAD is now at 977563e v0.40.3
+/Users/cameroncooke/.dotfiles
+  Installing latest LTS Node.js...
+Installing latest LTS version.
+v22.16.0 is already installed.
+Now using node v22.16.0 (npm v10.9.2)
+Now using node v22.16.0 (npm v10.9.2)
+  NVM installation completed
+   ✓ nvm completed
+   Running zsh installer...
+fatal: destination path '/Users/cameroncooke/.oh-my-zsh/custom/themes/powerlevel10k' already exists and is not an empty directory.
+fatal: destination path '/Users/cameroncooke/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting' already exists and is not an empty directory.
+fatal: destination path '/Users/cameroncooke/.oh-my-zsh/custom/plugins/zsh-autosuggestions' already exists and is not an empty directory.
+   ✓ zsh completed
+[2K  [ [00;32mOK[0m ] component installers completed
+  [ [00;34m..[0m ] validating installation
+[2K  [ [00;32mOK[0m ] validation passed
+
+  █████ ░▄▄▄█████▓ ▓█████ 
+ ▒██   ▒▓  ██▒ ▓▒▓█   ▀ 
+ ▒████ ░▒ ▓██░ ▒░▒███   
+ ▓█▒  ░░ ▓██▓ ░ ▒▓█  ▄ 
+ ░▒█░   ░  ▒██▒ ░ ░▒████▒
+  ▒ ░     ▒ ░░   ░░ ▒░ ░
+  ░       ░      ░ ░  ░
+  ░     ░        ░    
+
+  ✨ Installation Complete! ✨
+
+  🚀 Next Steps:
+  1. Restart your terminal or run: source ~/.zshrc
+  2. Configure iTerm2 to use "MesloLGS NF" font (Preferences → Profiles → Text → Font)
+  3. Run "p10k configure" to customize your Powerlevel10k prompt
+  4. Edit ~/.localrc to add your local environment variables
+  5. If any components failed, check the specific error messages above
+
+  🛠  Available Commands:
+  - dot: Update dependencies and configurations
+  - script/bootstrap: Re-run this installation
+  - brew bundle: Install/update Homebrew packages
+  - p10k configure: Configure Powerlevel10k theme
+
+  📝 Documentation:
+  - Dotfiles README: ~/.dotfiles/README.md
+  - Local config: ~/.localrc
+  - Zsh config: ~/.zshrc
+
