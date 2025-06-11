@@ -30,11 +30,16 @@ Transform your Mac into a powerful development machine with a single command. Th
 - **tmux** - Terminal multiplexer
 
 ### 🎯 Applications
+- **Amazon Q** - AI assistant for development
+- **Tuist** - Swift project generator and manager
+- **GitHub CLI** - Git workflow automation (CLI tool)
+- **Docker CLI** - Containerization (command-line only)
+
+### 📦 Optional Applications
+These can be enabled by uncommenting in the Brewfile:
 - **iTerm2** - Advanced terminal emulator
 - **Visual Studio Code** - Code editor
-- **Docker Desktop** - Containerization
-- **GitHub CLI** - Git workflow automation
-- **Amazon Q** - AI assistant
+- **Docker Desktop** - Docker with GUI
 
 ## 🏃‍♂️ Quick Start
 
@@ -70,8 +75,10 @@ script/bootstrap
 # Update everything (run periodically)
 script/update
 
-# Or use the short alias
-dot
+# Or use one of these aliases (after sourcing ~/.zshrc)
+dot                  # Short alias
+dotfiles-update      # Full command name
+df-update           # Alternative alias
 ```
 
 This updates:
@@ -154,7 +161,9 @@ alias myproject="cd ~/Developer/my-project"
 | `script/bootstrap` | Full installation from scratch |
 | `script/update` | Update all components |
 | `script/uninstall` | Remove dotfiles (keeps software) |
-| `dot` | Quick update (alias for script/update) |
+| `dot` | Quick update (alias) - use after sourcing ~/.zshrc |
+| `dotfiles-update` | Main update command (avoids graphviz conflict) |
+| `df-update` | Alternative update alias |
 | `p10k configure` | Customize Powerlevel10k theme |
 | `brew bundle` | Install/update Homebrew packages |
 

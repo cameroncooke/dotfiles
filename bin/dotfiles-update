@@ -1,9 +1,10 @@
 #!/bin/sh
 #
-# dot
+# dotfiles-update
 #
-# `dot` handles installation, updates, things like that. Run it periodically
+# `dotfiles-update` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
+# This was renamed from 'dot' to avoid conflicts with graphviz's dot command.
 export ZSH=$HOME/.dotfiles
 
 set -e

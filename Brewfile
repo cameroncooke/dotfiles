@@ -97,16 +97,14 @@ brew "graphviz"              # Graph visualization
 # Perl (for some git addons)
 brew "perl"
 
-# Fonts (keeping only the CLI-accessible font)
+# Fonts
 cask "font-meslo-lg-nerd-font"  # Powerline font for terminal
 
-# CLI-only tools (no GUI applications)
-# Note: Docker CLI is included with 'docker' brew formula
-# Note: Applications like VS Code, iTerm2, Docker Desktop should be installed manually
+# GUI Applications
+cask "amazon-q"              # Amazon Q AI assistant
+cask "tuist"                 # Swift project generator
 
-# Uncomment if you want these GUI applications installed automatically:
+# Optional GUI applications (uncomment as needed):
 # cask "iterm2"                # Terminal emulator  
 # cask "visual-studio-code"    # VS Code
 # cask "docker"                # Docker Desktop (GUI)
-# cask "amazon-q"              # Amazon Q
-# cask "tuist"                 # Swift project generator
